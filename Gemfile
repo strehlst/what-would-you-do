@@ -44,6 +44,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  # Use Rubocop to enforce Ruby style community guidelines
+  gem 'rubocop', '~> 0.52.1', require: false
 end
 
 group :development do
