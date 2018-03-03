@@ -54,6 +54,8 @@ group :development, :test do
   gem 'sqlite3'
   # Use Rubocop to enforce Ruby style community guidelines
   gem 'rubocop', '~> 0.52.1', require: false
+  # Use Rspec for controllers, models and features
+  gem 'rspec-rails', '~> 3.6'
 end
 
 group :development do
