@@ -43,7 +43,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Use PostgreSQL as the database for Active Record
-gem 'pg', '~> 0.20'
+gem 'pg', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
