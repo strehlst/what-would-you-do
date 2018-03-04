@@ -42,16 +42,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :production do
-  # Use PostgreSQL as the database for Active Record
-  gem 'pg', '~> 0.20'
-end
+# Use PostgreSQL as the database for Active Record
+gem 'pg', '~> 0.20'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
   # Use Rubocop to enforce Ruby style community guidelines
   gem 'rubocop', '~> 0.52.1', require: false
   # Use Rspec for controllers, models and features
