@@ -50,8 +50,8 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Use Rubocop to enforce Ruby style community guidelines
   gem 'rubocop', '~> 0.52.1', require: false
-  # Use Rspec for controllers, models and features
-  gem 'rspec-rails', '~> 3.6'
+  # Use RSpec for controllers, models and features
+  gem 'rspec-rails', '~> 3.7'
 end
 
 group :development do
