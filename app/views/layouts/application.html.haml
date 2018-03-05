@@ -10,6 +10,21 @@
     = stylesheet_link_tag     'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag  'application', 'data-turbolinks-track': 'reload'
 
-    %title WhatWouldYouDo
+    %title What would you do if your income were taken care of?
   %body
+    %nav{class: 'navbar fixed-top navbar-expand-md navbar-mge navbar-mge-warm', role: 'navigation'}
+      %a{class: 'navbar-brand d-none d-sm-block', href: '#'}
+        What would you do if your income were taken care of?
+      %a{class: 'navbar-brand navbar-mobile-brand d-sm-none', href: '#'}
+        %strong What would you do
+        if your income were taken care of?
+      %button{class: 'navbar-toggler', 'data-target': '.navbar-collapse', 'data-toggle': 'collapse', type: 'button'}
+        ☰
+      .collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto
+          - [['Start', root_path]].each_with_index do | item, index |
+            %li.nav-item{class: index==0?'active':''}
+              %a.nav-link{href: item[1]}
+                = item[0]
+
     = yield

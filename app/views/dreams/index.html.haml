@@ -1,2 +1,5 @@
-%h1 Dreams#index
-%p Find me in app/views/dreams/index.html.haml
+%section.container-fluid
+  .row
+    .col-lg-12
+      %h1= "Humans would do #{@dreams_count} things if their income were taken care of"
+      = render @dreams
