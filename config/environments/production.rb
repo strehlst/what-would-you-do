@@ -66,7 +66,33 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = false
+
+  # Use SMTP to send mails
+  Rails.application.routes.default_url_options[:host] =
+    ENV['MAILER_URL_PATH_PREFIX'] || "#{ENV['HEROKU_APP_NAME']}.herokuapp.com"
+
+  config.action_mailer.default_url_options = {
+    host: ENV['MAILER_URL_PATH_PREFIX'] || "#{ENV['HEROKU_APP_NAME']}.herokuapp.com",
+    port: ENV['MAILER_URL_PORT']
+  }
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.default_options = {
+    from: ENV['MAILER_FROM'],
+    reply_to: ENV['MAILER_REPLY_TO']
+  }
+
+  config.action_mailer.smtp_settings = {
+    address: ENV['MAILER_ADDRESS'],
+    port: ENV['MAILER_PORT'],
+    domain: ENV['MAILER_DOMAIN'],
+    authentication: ENV['MAILER_AUTHENTICATION'],
+    enable_starttls_auto: true,
+    user_name: ENV['MAILER_USER_NAME'],
+    password: ENV['MAILER_USER_PASSWORD']
+  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
