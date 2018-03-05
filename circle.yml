@@ -176,8 +176,13 @@ jobs:
           cp config/database.yml.ci config/database.yml
           bundle exec rails db:create db:schema:load --trace
 
-
       # run tests!
       - run:
           name: RSpec
           command: bundle exec rspec
+
+      # Report to Code Climate
+      #TODO Configuration has changed from CircleCI 1 to 2
+      #- run:
+          #name: Code Climate test-reporter
+          #command: bundle exec codeclimate-test-reporter

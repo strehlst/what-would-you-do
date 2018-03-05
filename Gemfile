@@ -54,6 +54,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
 end
 
+group :test do
+  gem 'codeclimate-test-reporter', '~> 1.0.0'
+  gem 'simplecov'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'listen', '>= 3.0.5', '< 3.2'
