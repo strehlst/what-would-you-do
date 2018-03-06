@@ -1,0 +1,16 @@
+= form_with(model: dream, local: true) do | form |
+  - if dream.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(product.errors.count, "error")
+        prohibited this dream from being saved:
+      %ul
+        - dream.errors.full_messages.each do |message|
+          %li= message
+  .form-group
+    .field
+      = form.label :caption, 'I would...'
+      = form.text_field :caption, placeholder: 'travel the world', type: 'text', class: 'form-control'
+  .form-group
+    .actions
+      = form.submit class: 'btn btn-primary', value: 'Share dream'

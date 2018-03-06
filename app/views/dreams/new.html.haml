@@ -1,0 +1,9 @@
+%section.container-fluid
+  .row
+    .col-lg-12
+      %h1 What would you do if your income were taken care of?
+      = render 'form', dream: @dream
+  .row
+    .col-lg-12
+      %h3 Other humans would...
+      = render @dreams
