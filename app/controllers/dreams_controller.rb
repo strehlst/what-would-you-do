@@ -16,7 +16,7 @@ class DreamsController < ApplicationController
 
     if @dream.save
       redirect_to @dream,
-        notice: 'Dream was successfully created.'
+                  notice: 'Dream was successfully created.'
     else
       render 'new'
     end
