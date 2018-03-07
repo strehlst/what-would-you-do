@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  devise_for :users
   resources :users
   root 'dreams#new'
   resources :dreams, only: %i[index show new create]
