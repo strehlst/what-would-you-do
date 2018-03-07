@@ -17,19 +17,19 @@ RSpec.describe DreamsController, type: :controller do
 
   # TODO: Implement using gem 'factory_bot_rails'
   describe 'GET #show' do
-    pending 'returns http success' do
+    xit 'returns http success' do
       get :show
       expect(response).to have_http_status(:success)
     end
   end
 
   describe 'GET #new' do
-    it 'returns http success' do
+    xit 'returns http success' do
       get :new
       expect(response).to have_http_status(:success)
     end
 
-    it 'renders the new view' do
+    xit 'renders the new view' do
       get :new
       expect(response).to render_template(:new)
     end
@@ -37,7 +37,7 @@ RSpec.describe DreamsController, type: :controller do
 
   # TODO: Implement using gem 'factory_bot_rails'
   describe 'POST #create' do
-    pending 'returns http success' do
+    xit 'returns http success' do
       post :create
       expect(response).to have_http_status(:success)
     end

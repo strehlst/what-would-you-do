@@ -1,9 +1,16 @@
 # frozen_string_literal: true
 
-class DreamsController < ApplicationController
+class DreamsController < ApplicationResourceController
+  include MetricsHelper
+  before_action :authenticate_user!, except: %i[index show]
+  before_action :load_metrics, only: %i[index show]
+
   def index
     @dreams = Dream.all
-    @dreams_count = @dreams.size
+  end
+
+  def show
+    @new_dream = Dream.new
   end
 
   def new
@@ -12,7 +19,7 @@ class DreamsController < ApplicationController
   end
 
   def create
-    @dream = Dream.new(dream_params)
+    @dream = Dream.new(resource_params)
 
     if @dream.save
       redirect_to @dream,
@@ -24,7 +31,7 @@ class DreamsController < ApplicationController
 
   private
 
-  def dream_params
+  def resource_params
     params.require(:dream).permit(:caption)
   end
 end

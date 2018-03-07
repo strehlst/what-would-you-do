@@ -1,6 +1,13 @@
 %section.container-fluid
   .row
     .col-lg-12
-      %h1= "I would #{@resource.caption}."
+      %h1
+        = "I would #{@dream.caption}."
+        = link_to 'Me too', new_dream_path, class: 'btn btn-primary'
+      - if user_signed_in?
+        %h3 What else would you do?
+        = render 'form', dream: @new_dream
+      - else
+        = render 'shared/login_or_register'
 
-      = link_to 'View all dreams and add more', root_path, class: 'btn btn-primary'
+      = link_to "#{@users_count} people would do #{@dreams_count} things", dreams_path, class: 'btn btn-link'
