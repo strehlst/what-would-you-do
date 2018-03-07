@@ -24,9 +24,12 @@
         %ul.navbar-nav.ml-auto
           - [['Start', root_path]].each_with_index do | item, index |
             %li.nav-item{class: index==0?'active':''}
-              %a.nav-link{href: item[1]}
-                = item[0]
-
+              = link_to(item[0], item[1], class: 'nav-link')
+          %li.nav-item
+            - if user_signed_in?
+              = link_to('Logout', destroy_user_session_path, method: :delete, class: 'nav-link')
+            - else
+              = link_to('Login', new_user_session_path, class: 'nav-link')
     - if notice
       %p#notice.notice.notice-info= notice
     - if alert
