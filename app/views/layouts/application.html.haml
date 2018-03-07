@@ -27,4 +27,9 @@
               %a.nav-link{href: item[1]}
                 = item[0]
 
+    - if notice
+      %p#notice.notice.notice-info= notice
+    - if alert
+      %p#alert.alert.alert-warning= alert
+
     = yield
