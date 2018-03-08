@@ -22,10 +22,33 @@ class DreamsController < ApplicationResourceController
     @dream = Dream.new(resource_params)
 
     if @dream.save
+      Embrace.create(dream: @dream, user: current_user)
       redirect_to @dream,
                   notice: 'Dream was successfully created.'
     else
       render 'new'
+    end
+  end
+
+  def embrace
+    load_resource
+    if Embrace.create(dream: @dream, user: current_user)
+      redirect_to @dream,
+                  notice: 'Dream was successfully embraced.'
+    else
+      redirect_to @dream,
+                  alert: 'Dream was not successfully embraced.'
+    end
+  end
+
+  def disembrace
+    load_resource
+    if Embrace.find_by(dream: @dream, user: current_user).destroy
+      redirect_to @dream,
+                  notice: 'Dream was successfully disembraced.'
+    else
+      redirect_to @dream,
+                  alert: 'Dream was not successfully embraced.'
     end
   end
 

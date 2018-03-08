@@ -4,4 +4,4 @@
       %h1 What would you do if your income were taken care of?
       %h3 Other humans would...
       = render @dreams
-      = render 'shared/login_or_register'
+      = render 'shared/login_or_register', after_sign_in_path: new_dream_path
