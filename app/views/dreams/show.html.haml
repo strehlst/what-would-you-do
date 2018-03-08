@@ -3,7 +3,7 @@
     .col-lg-12
       %h1
         = "I would #{@dream.caption}."
-        = render 'embraces/embrace_button'
+        = render 'embraces/embrace_button', dream: @dream
       - if user_signed_in?
         %h3 What else would you do?
         = render 'form', dream: @new_dream

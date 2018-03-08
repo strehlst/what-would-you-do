@@ -27,7 +27,7 @@
               = link_to(item[0], item[1], class: 'nav-link')
             - if user_signed_in?
               %li.nav-item
-                = link_to('My Dreams', edit_user_path(current_user), class: 'nav-link')
+                = link_to('My Dreams', user_dreams_path, class: 'nav-link')
               %li.nav-item
                 = link_to('Edit Profile', edit_user_registration_path, class: 'nav-link')
               %li.nav-item

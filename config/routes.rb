@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: { registrations: 'registrations' }
   resources :users, only: %i[show]
+  get 'user/dreams', to: 'users#dreams'
   resources :dreams, only: %i[index show new create]
   get 'dreams/:id/embrace', to: 'dreams#embrace', as: 'embrace_dream'
   delete 'dreams/:id/disembrace', to: 'dreams#disembrace', as: 'disembrace_dream'

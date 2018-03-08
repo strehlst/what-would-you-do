@@ -1,2 +1,6 @@
-%h3.dream
-  = link_to "...#{dream.caption}", dream_path(dream)
+.dream
+  %h3{class: "h4#{' h5' if dream.caption.size > 30}"}
+    = link_to "...#{dream.caption}", dream_path(dream)
+
+  .text-right
+    = render 'embraces/embrace_button', dream: dream

@@ -1,11 +1,11 @@
-%footer
-  .row.margin
-    .col-md-12.text-left
-      %h3.color--white
-        %pre= "ENV: #{Rails.env}"
-      %h3.small.color--white.margin--bottom-x-small Params
-      %pre= params
+%section.container-fluid.bg-dark.color.text-white
+  .row
+    .col-lg-12
+      %h3
+        %pre.text-white= "ENV: #{Rails.env}"
+      %h3.text-white Params
+      %pre.text-white= params
 
       -if current_user.present?
-        %h3.small.color--white.margin--bottom-x-small Current user
-        %pre= current_user.inspect
+        %h3.text-white Current user
+        %pre.text-white= current_user.inspect

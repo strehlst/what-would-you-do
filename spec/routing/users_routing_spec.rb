@@ -35,5 +35,9 @@ RSpec.describe UsersController, type: :routing do
     it 'routes to #destroy' do
       expect(delete: '/users/1').not_to route_to('users#destroy', id: '1')
     end
+
+    it 'routes to #dreams' do
+      expect(get: '/user/dreams').to route_to('users#dreams')
+    end
   end
 end
