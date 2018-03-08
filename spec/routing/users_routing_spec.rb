@@ -17,7 +17,7 @@ RSpec.describe UsersController, type: :routing do
     end
 
     it 'routes to #edit' do
-      expect(get: '/users/1/edit').to route_to('users#edit', id: '1')
+      expect(get: '/users/1/edit').not_to route_to('users#edit', id: '1')
     end
 
     it 'does not route to #create' do
@@ -25,15 +25,15 @@ RSpec.describe UsersController, type: :routing do
     end
 
     it 'routes to #update via PUT' do
-      expect(put: '/users/1').to route_to('users#update', id: '1')
+      expect(put: '/users/1').not_to route_to('users#update', id: '1')
     end
 
     it 'routes to #update via PATCH' do
-      expect(patch: '/users/1').to route_to('users#update', id: '1')
+      expect(patch: '/users/1').not_to route_to('users#update', id: '1')
     end
 
     it 'routes to #destroy' do
-      expect(delete: '/users/1').to route_to('users#destroy', id: '1')
+      expect(delete: '/users/1').not_to route_to('users#destroy', id: '1')
     end
   end
 end
