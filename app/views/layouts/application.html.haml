@@ -39,3 +39,6 @@
       %p#alert.alert.alert-warning= alert
 
     = yield
+
+  -if Rails.env.development?
+    = render 'shared/development_inspection'
