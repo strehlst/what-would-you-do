@@ -3,11 +3,11 @@
     .col-lg-12
       %h1
         = "I would #{@dream.caption}."
-        = link_to 'Me too', new_dream_path, class: 'btn btn-primary'
+        = render 'embraces/embrace_button'
       - if user_signed_in?
         %h3 What else would you do?
         = render 'form', dream: @new_dream
       - else
-        = render 'shared/login_or_register'
+        = render 'shared/login_or_register', after_sign_in_path: nil
 
       = link_to "#{@users_count} people would do #{@dreams_count} things", dreams_path, class: 'btn btn-link'
