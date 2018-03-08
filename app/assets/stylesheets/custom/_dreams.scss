@@ -1,0 +1,23 @@
+.dream {
+  background: -webkit-gradient(linear, left top, right top, from(#0888b2), to(#b2317a));
+  background: -webkit-linear-gradient(left, #0888b2 0%, #b2317a 100%);
+  background: -o-linear-gradient(left, #0888b2 0%, #b2317a 100%);
+  background: linear-gradient(to left, #0888b2 0%, #b2317a 100%);
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+  padding: .8rem;
+  border: .4rem solid #eee;
+  margin-top: 1rem;
+}
+
+.dream h3 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}

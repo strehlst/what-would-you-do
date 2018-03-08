@@ -27,6 +27,10 @@ class UsersController < ApplicationResourceController
     redirect_to users_url, notice: 'User was successfully destroyed.'
   end
 
+  def dreams
+    @embraces = Embrace.includes(:dream).all.where(user_id: current_user.id)
+  end
+
   private
 
   def resource_params

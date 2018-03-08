@@ -4,5 +4,9 @@
 @import "bootstrap";
 
 // Custom CSS rules files
-@import 'base/navbar';
-@import 'base/btn';
+@import 'base/headings';
+
+@import 'components/navbar';
+@import 'components/btn';
+
+@import 'custom/dreams';
