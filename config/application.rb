@@ -18,6 +18,8 @@ require 'sprockets/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load if Rails.env.development?
+
 module WhatWouldYouDo
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

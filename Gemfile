@@ -74,6 +74,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use letter opener for e-mails
   gem 'letter_opener'
+  # Use Dotenv to work with environment variables
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
