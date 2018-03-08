@@ -27,10 +27,14 @@
               = link_to(item[0], item[1], class: 'nav-link')
             - if user_signed_in?
               %li.nav-item
-                = link_to('Logout', destroy_user_session_path, method: :delete, class: 'nav-link')
+                = link_to('My Dreams', edit_user_path(current_user), class: 'nav-link')
               %li.nav-item
-                = link_to('My Profile', edit_user_path(current_user), class: 'nav-link')
+                = link_to('Edit Profile', edit_user_registration_path, class: 'nav-link')
+              %li.nav-item
+                = link_to('Logout', destroy_user_session_path, method: :delete, class: 'nav-link')
             - else
+              %li.nav-item
+              = link_to('Register', new_user_registration_path, class: 'nav-link')
               %li.nav-item
               = link_to('Login', new_user_session_path, class: 'nav-link')
     - if notice
