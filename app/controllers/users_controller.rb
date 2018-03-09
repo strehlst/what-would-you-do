@@ -29,7 +29,8 @@ class UsersController < ApplicationResourceController
 
   def dreams
     @new_dream = Dream.new
-    @dreams = Embrace.includes(:dream).all.where(user_id: current_user.id).map { |embrace| Dream.find(embrace.dream_id) }
+    @dreams = Embrace.includes(:dream).all.where(user_id: current_user.id)
+      .map { |embrace| Dream.find(embrace.dream_id) }
   end
 
   private
