@@ -1,0 +1,21 @@
+body {
+  background-color: #ddd;
+}
+
+section {
+  padding-bottom: 3rem;
+  background-color: #fff;
+}
+
+section:first-of-type {
+  padding: 1rem 0 3rem;
+}
+
+@media(min-width: 960px){
+  .container-fluid {
+    width: 960px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0 auto;
+  }
+}

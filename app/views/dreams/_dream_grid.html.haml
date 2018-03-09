@@ -1,0 +1,7 @@
+- dreams.each_with_index do | dream, index |
+  - if index == 0
+    .col-sm-12
+      = render 'dreams/dream', dream: dream
+  - else
+    .col-sm-4
+      = render 'dreams/dream', dream: dream

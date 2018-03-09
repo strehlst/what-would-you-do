@@ -1,13 +1,17 @@
 %section.container-fluid
   .row
     .col-lg-12
-      %h1
-        = "I would #{@dream.caption}."
-        = render 'embraces/embrace_button', dream: @dream
+      = render 'dreams/dream', dream: @dream
+
+    .col-lg-12.text-center
+      %br
+      = link_to "#{@users_count} people would do #{@dreams_count} things", dreams_path, class: 'btn btn-link'
+      %hr
+
+%section.container-fluid
+  .row
+    .col-md-6.offset-md-3
       - if user_signed_in?
-        %h3 What else would you do?
-        = render 'form', dream: @new_dream
+        = render 'dreams/what_would_you_do', new_dream: @new_dream
       - else
         = render 'shared/login_or_register', after_sign_in_path: nil
-
-      = link_to "#{@users_count} people would do #{@dreams_count} things", dreams_path, class: 'btn btn-link'

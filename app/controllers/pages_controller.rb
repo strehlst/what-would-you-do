@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def frontpage
-    @dreams = Dream.all.limit(5)
+    @dreams = Dream.by_popularity_desc
   end
 
   def not_found

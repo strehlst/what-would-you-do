@@ -2,6 +2,12 @@
   .row
     .col-lg-12
       %h1 What would you do if your income were taken care of?
-      %h2 Other humans would...
-      = render @dreams
+      %h2 That's what other people say:
+  .row
+    = render 'dreams/dream_grid', dreams: @dreams
+
+%section.container-fluid
+  .row
+    .col-lg-12.text-center
+      %hr
       = render 'shared/login_or_register', after_sign_in_path: new_dream_path

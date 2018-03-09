@@ -2,5 +2,10 @@
   .row
     .col-lg-12
       %h1 My Dreams
-      - @embraces.each do | embrace |
-        = render 'dreams/dream', dream: embrace.dream
+  .row
+    = render 'dreams/dream_grid', dreams: @dreams
+
+%section.container-fluid
+  .row
+    .col-lg-12
+      = render 'dreams/what_would_you_do', new_dream: @new_dream
