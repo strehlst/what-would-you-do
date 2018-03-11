@@ -1,10 +1,10 @@
 ---
 en:
   main:
-    what_would_you_do_long_caption: 'What would you do if your income was taken care of?'
+    what_would_you_do_long_caption: 'What would you do if your income were taken care of?'
     partials:
       what_would_you_do: 'What would you do'
-      if_your_income_was_taken_care_of: 'if your income was taken care of?'
+      if_your_income_was_taken_care_of: 'if your income wer taken care of?'
   navigation:
     about: 'About'
     contact: 'Contact'
