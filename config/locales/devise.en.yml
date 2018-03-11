@@ -1,6 +1,35 @@
 ---
 en:
   devise:
+    # Custom keys
+    dictionary:
+      are_you_sure: 'Are you sure?'
+      email: 'E-Mail'
+      password: 'Password'
+      password_confirmation: 'Password confirmation'
+      current_password: 'Current password'
+      characters_minimum: '%{minimum_length} characters minimum'
+      characters_maximum: '%{minimum_length} characters maximum'
+      save: 'Save'
+      update: 'Update'
+      cancel: 'Cancel'
+      back: 'Back'
+
+    controllers:
+      registrations:
+          edit:
+            title: 'Edit user information'
+            password:
+              leave_blank_if_no_change_desired: "leave blank if you don't want to change it"
+              we_need_your_current_password_to_confirm: 'we need your current password to confirm your changes'
+          cancel:
+            are_you_unhappy: 'Unhappy?'
+            cancel_my_account: 'Cancel my account'
+          confirm:
+            currently_waiting_for_confirmation: 'currently waiting for confirmation for %{email}'
+
+
+    # Flash message texts
     confirmations:
       confirmed: Your email address has been successfully confirmed.
       send_instructions: You will receive an email with instructions for how to confirm

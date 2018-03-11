@@ -121,9 +121,6 @@ fr-FR:
     unavailable_session: 
     unacceptable_request: 
     connection_refused: 
-    i18n:
-      application_locale:
-        not_properly_set: 
   activerecord:
     errors:
       messages:
@@ -260,6 +257,30 @@ fr-FR:
         vous recevrez sous quelques minutes un message avec des instructions pour
         déverrouiller votre compte.
       unlocked: Votre compte a été déverrouillé avec succès. Veuillez vous connecter.
+    dictionary:
+      email: 
+      password: 
+      are_you_sure: 
+      password_confirmation: 
+      current_password: 
+      characters_minimum: 
+      characters_maximum: 
+      save: 
+      update: 
+      cancel: 
+      back: 
+    controllers:
+      registrations:
+        edit:
+          title: 
+          password:
+            leave_blank_if_no_change_desired: 
+            we_need_your_current_password_to_confirm: 
+        cancel:
+          are_you_unhappy: 
+          cancel_my_account: 
+        confirm:
+          currently_waiting_for_confirmation: 
   main:
     partials:
       if_your_income_was_taken_care_of: 

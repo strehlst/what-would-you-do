@@ -30,7 +30,7 @@
             = link_to(t('navigation.about'), pages_about_path, class: 'nav-link')
             - if user_signed_in?
               %li.nav-item
-                = link_to(t('navigation.i_would'), user_dreams_path, class: 'nav-link')
+                = link_to(t('navigation.signed_in.i_would'), user_dreams_path, class: 'nav-link')
               %li.nav-item
                 = link_to(t('navigation.signed_in.my_profile'), edit_user_registration_path, class: 'nav-link')
               %li.nav-item
