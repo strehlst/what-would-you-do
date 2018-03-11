@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   root 'pages#frontpage'
 
-  devise_for :user, controllers: { registrations: 'registrations' }
+  devise_for :users, controllers: { registrations: 'registrations' }
   get 'user/dreams', to: 'users#dreams'
   resources :users, only: %i[show]
   resources :dreams, only: %i[index show new create]
