@@ -48,6 +48,9 @@ gem 'devise'
 # Use PostgreSQL as the database for Active Record
 gem 'pg', '~> 1.0'
 
+# Use translation.io service for i18n
+gem 'translation'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
