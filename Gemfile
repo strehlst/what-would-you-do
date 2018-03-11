@@ -48,9 +48,6 @@ gem 'devise'
 # Use PostgreSQL as the database for Active Record
 gem 'pg', '~> 1.0'
 
-# Use translation.io service for i18n
-gem 'translation'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -79,6 +76,8 @@ group :development do
   gem 'letter_opener'
   # Use Dotenv to work with environment variables
   gem 'dotenv-rails'
+  # Use translation.io service for i18n
+  gem 'translation'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

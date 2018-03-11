@@ -48,8 +48,3 @@ node_modules/
 
 # Ignore IDEs
 .idea
-
-# Ignore translation.io files
-config/locales/.translation_io
-config/locales/localization.*
-config/locales/translation.*
