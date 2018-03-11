@@ -6,7 +6,6 @@
 #
 ---
 fr-FR:
-  hello: Bonjour monde
   date:
     day_names:
     - dimanche
@@ -122,6 +121,9 @@ fr-FR:
     unavailable_session: 
     unacceptable_request: 
     connection_refused: 
+    i18n:
+      application_locale:
+        not_properly_set: 
   activerecord:
     errors:
       messages:
@@ -263,3 +265,13 @@ fr-FR:
       if_your_income_was_taken_care_of: 
       what_would_you_do: 
     what_would_you_do_long_caption: 
+  navigation:
+    signed_in:
+      logout: 
+      i_would: 
+      my_profile: 
+    about: 
+    contact: 
+    signed_out:
+      register: 
+      login: 

@@ -5,3 +5,18 @@ en:
     partials:
       what_would_you_do: 'What would you do'
       if_your_income_was_taken_care_of: 'if your income was taken care of?'
+  navigation:
+    about: 'About'
+    contact: 'Contact'
+    signed_out:
+      register: 'Register'
+      login: 'Login'
+    signed_in:
+      i_would: 'I would...'
+      my_profile: 'My profile'
+      logout: 'Logout'
+
+  errors:
+    i18n:
+      application_locale:
+        not_properly_set: 'The application locale has not been set properly.'

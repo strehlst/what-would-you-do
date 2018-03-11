@@ -6,7 +6,6 @@
 #
 ---
 pt-PT:
-  hello: Olá mundo
   date:
     day_names:
     - Domingo
@@ -120,6 +119,9 @@ pt-PT:
     unavailable_session: 
     unacceptable_request: 
     connection_refused: 
+    i18n:
+      application_locale:
+        not_properly_set: 
   activerecord:
     errors:
       messages:
@@ -255,6 +257,16 @@ pt-PT:
         para continuar.
   main:
     partials:
-      if_your_income_was_taken_care_of: 
-      what_would_you_do: 
-    what_would_you_do_long_caption: 
+      if_your_income_was_taken_care_of: se o teu rendimento fosse garantido?
+      what_would_you_do: O que farias
+    what_would_you_do_long_caption: O que farias se o teu rendimento fosse garantido?
+  navigation:
+    signed_in:
+      logout: 
+      i_would: Eu iria...
+      my_profile: Meu perfil
+    about: O que é?
+    contact: 
+    signed_out:
+      register: Registo
+      login: Login
