@@ -1,11 +1,8 @@
 %section.container-fluid
   .row
     .col-lg-12
-      %h1 My Dreams
+      %h1 I would...
   .row
     = render 'dreams/dream_grid', dreams: @dreams
-
-%section.container-fluid
-  .row
-    .col-lg-12
+    .col-sm-6.col-md-8.row-eq-height
       = render 'dreams/what_would_you_do', new_dream: @new_dream

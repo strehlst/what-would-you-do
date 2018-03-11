@@ -1,4 +1,4 @@
 - unless dream.embraced?(current_user)
-  =link_to 'Me too', embrace_dream_path(dream), class: 'btn btn-primary btn-sm'
+  =link_to 'You too?', embrace_dream_path(dream), class: 'btn btn-primary btn-sm'
 - else
-  =link_to 'You too <3', disembrace_dream_path(dream), 'data-method': :delete, method: :delete, class: 'btn btn-secondary btn-sm', data: { confirm: 'You really want to let go of this dream?' }
+  =link_to 'You too! <3', disembrace_dream_path(dream), 'data-method': :delete, method: :delete, class: 'btn btn-secondary btn-sm', data: { confirm: 'You really want to let go of this dream?' }

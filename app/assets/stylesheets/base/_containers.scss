@@ -7,11 +7,25 @@ section {
   background-color: #fff;
 }
 
-section:first-of-type {
+section#alerts {
   padding: 1rem 0 3rem;
 }
 
-@media(min-width: 960px){
+section#alerts .alert {
+  margin-top: 1.5rem;
+}
+
+
+@include media-breakpoint-up(sm) {
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+}
+
+@include media-breakpoint-up(md) {
   .container-fluid {
     width: 960px;
     padding-left: 3rem;
