@@ -49,7 +49,5 @@ node_modules/
 # Ignore IDEs
 .idea
 
-# Ignore translation.io files
+# Ignore translate Gem timestamp file
 config/locales/.translation_io
-config/locales/localization.*
-config/locales/translation.*
