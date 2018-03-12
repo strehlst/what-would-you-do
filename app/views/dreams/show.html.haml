@@ -12,6 +12,6 @@
   .row
     .col-md-6.offset-md-3
       - if user_signed_in?
-        = render 'dreams/what_would_you_do', new_dream: @new_dream
+        = render 'dreams/form', dream: @new_dream, title: t('main.variations.what_else_would_you_do')
       - else
         = render 'shared/login_or_register', after_sign_in_path: nil

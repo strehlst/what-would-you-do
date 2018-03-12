@@ -6,6 +6,7 @@ class DreamsController < ApplicationResourceController
   before_action :load_metrics, only: %i[index show]
 
   def index
+    load_metrics
     @dreams = Dream.all
   end
 

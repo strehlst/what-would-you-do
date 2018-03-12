@@ -10,8 +10,22 @@
   margin-top: 1rem;
 }
 
+@include media-breakpoint-up(sm) {
+  .dream {
+    width: 100%;
+  }
+}
+
+.dream.new-dream {
+  background: #fff;
+}
+
 .dream h3 {
   color: #fff;
+}
+
+.dream.new-dream h3 {
+  color: #666;
 }
 
 a {

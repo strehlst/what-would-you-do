@@ -1,11 +1,6 @@
 %section.container-fluid
   .row
     .col-lg-12
-      %h1 My Dreams
+      %h1= t('main.variations.i_would')
   .row
-    = render 'dreams/dream_grid', dreams: @dreams
-
-%section.container-fluid
-  .row
-    .col-lg-12
-      = render 'dreams/what_would_you_do', new_dream: @new_dream
+    = render 'dreams/dream_grid', dreams: @dreams, new_dream: @new_dream, title: t('main.variations.what_else_would_you_do')
