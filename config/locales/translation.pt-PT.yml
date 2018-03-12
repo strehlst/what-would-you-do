@@ -142,20 +142,20 @@ pt-PT:
         one: 1 minuto
         other: "%{count} minutos"
       about_x_hours:
-        one: aproximadamente 1 hora
-        other: aproximadamente %{count} horas
+        one: cerca de uma hora
+        other: cerca de %{count} horas
       x_days:
         one: 1 dia
         other: "%{count} dias"
       about_x_months:
-        one: aproximadamente 1 mês
-        other: aproximadamente %{count} meses
+        one: cerca de um mês
+        other: cerca de %{count} meses
       x_months:
         one: 1 mês
         other: "%{count} meses"
       about_x_years:
-        one: aproximadamente 1 ano
-        other: aproximadamente %{count} anos
+        one: cerca de um ano
+        other: cerca de %{count} anos
       over_x_years:
         one: mais de 1 ano
         other: mais de %{count} anos
@@ -282,12 +282,12 @@ pt-PT:
       what_would_you_do: O que farias
       if_your_income_were_taken_care_of: se o teu rendimento fosse garantido?
     variations:
-      and_what_would_you_do: E o que farias to?
+      and_what_would_you_do: E o que farias tu?
       what_else_would_you_do: Que mais farias?
       and_you_what_would_you_do: E tu, o que farias tu?
       i_would: Eu iria...
       join_our_users_long_call: 
-      that_is_what_other_people_would_do: 'Isso é que fariam os outros:'
+      that_is_what_other_people_would_do: 'Isto é que fariam os outros:'
       a_number_of_people_would_do_a_number_of_things: "%{users_count} pessoas fariam
         %{dreams_count} coisas"
       if_their_income_were_taken_care_of: se o rendimento delas fosse garantido
@@ -301,3 +301,7 @@ pt-PT:
     signed_out:
       register: Registo
       login: Login
+  dictionary:
+    time_ago: há %{time}
+    you_too: Tu também <3
+    you_too_question: Tu também?

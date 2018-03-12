@@ -305,3 +305,7 @@ fr-FR:
     signed_out:
       register: 
       login: 
+  dictionary:
+    time_ago: 
+    you_too: 
+    you_too_question: 
