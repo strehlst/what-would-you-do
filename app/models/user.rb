@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   has_many :embraces
 
-  def avatar_path
+  def avatar_url
     image_path = self[:avatar_path] || 'default_avatar'
     ENV['IMAGE_CDN_PATH'] + '/avatars/' + image_path
   end
