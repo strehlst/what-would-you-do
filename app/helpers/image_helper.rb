@@ -2,10 +2,10 @@
 
 module ImageHelper
   def quadratic_image_path(image_key, size = nil)
-      cloudinary_image(image_key, size)
-    end
+    cloudinary_image(image_key, size)
+  end
 
-private
+  private
 
   def cloudinary_image(image_key, size = nil)
     if size.nil?
