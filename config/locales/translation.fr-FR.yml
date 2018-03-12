@@ -282,10 +282,19 @@ fr-FR:
         confirm:
           currently_waiting_for_confirmation: 
   main:
-    partials:
-      if_your_income_was_taken_care_of: 
-      what_would_you_do: 
     what_would_you_do_long_caption: 
+    partials:
+      what_would_you_do: 
+      if_your_income_were_taken_care_of: 
+    variations:
+      and_what_would_you_do: 
+      what_else_would_you_do: 
+      and_you_what_would_you_do: 
+      i_would: 
+      join_our_users_long_call: 
+      that_is_what_other_people_would_do: 
+      a_number_of_people_would_do_a_number_of_things: 
+      if_their_income_were_taken_care_of: 
   navigation:
     signed_in:
       logout: 

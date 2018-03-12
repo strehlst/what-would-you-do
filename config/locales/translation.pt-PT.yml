@@ -277,10 +277,20 @@ pt-PT:
         confirm:
           currently_waiting_for_confirmation: 
   main:
-    partials:
-      if_your_income_was_taken_care_of: se o teu rendimento fosse garantido?
-      what_would_you_do: O que farias
     what_would_you_do_long_caption: O que farias se o teu rendimento fosse garantido?
+    partials:
+      what_would_you_do: O que farias
+      if_your_income_were_taken_care_of: se o teu rendimento fosse garantido?
+    variations:
+      and_what_would_you_do: E o que farias to?
+      what_else_would_you_do: Que mais farias?
+      and_you_what_would_you_do: E tu, o que farias tu?
+      i_would: Eu iria...
+      join_our_users_long_call: 
+      that_is_what_other_people_would_do: 'Isso é que fariam os outros:'
+      a_number_of_people_would_do_a_number_of_things: "%{users_count} pessoas fariam
+        %{dreams_count} coisas"
+      if_their_income_were_taken_care_of: se o rendimento delas fosse garantido
   navigation:
     signed_in:
       logout: 
