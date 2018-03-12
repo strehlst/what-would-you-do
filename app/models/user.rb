@@ -12,5 +12,4 @@ class User < ApplicationRecord
     image_path = self[:avatar_path] || 'default_avatar'
     ENV['IMAGE_CDN_PATH'] + '/avatars/' + image_path
   end
-
 end
