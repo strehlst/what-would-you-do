@@ -7,4 +7,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :embraces
+
+  def avatar_path
+    image_path = self[:avatar_path] || 'default_avatar'
+    ENV['IMAGE_CDN_PATH'] + '/avatars/' + image_path
+  end
+
 end
