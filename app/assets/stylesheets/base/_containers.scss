@@ -27,9 +27,14 @@ section#alerts .alert {
 
 @include media-breakpoint-up(md) {
   .container-fluid {
-    width: 960px;
     padding-left: 3rem;
     padding-right: 3rem;
     margin: 0 auto;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .container-fluid {
+    width: 992px;
   }
 }

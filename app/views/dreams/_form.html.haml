@@ -23,5 +23,5 @@
     %p= t('main.variations.join_our_users_long_call', users_count: @users_count)
 
     .text-right
-      =link_to t('navigation.signed_out.register'), new_user_session_path, class: 'btn btn-primary'
-      =link_to t('navigation.signed_out.login'), new_user_registration_path, class: 'btn btn-secondary'
+      =link_to t('navigation.signed_out.register'), new_user_registration_path, class: 'btn btn-primary'
+      =link_to t('navigation.signed_out.login'), new_user_session_path, class: 'btn btn-secondary'
