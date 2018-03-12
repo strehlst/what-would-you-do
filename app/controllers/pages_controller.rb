@@ -9,7 +9,8 @@ class PagesController < ApplicationController
   end
 
   def frontpage
-    @dreams = Dream.by_popularity_desc
+    load_metrics
+    @dreams = Dream.by_popularity_desc(5)
   end
 
   def not_found

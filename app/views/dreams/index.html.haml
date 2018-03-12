@@ -1,5 +1,6 @@
 %section.container-fluid
   .row
     .col-lg-12
-      %h1= "Humans would do #{@dreams_count} things if their income were taken care of"
+      %h1= t('main.variations.a_number_of_people_would_do_a_number_of_things', users_count: @users_count, dreams_count: @dreams_count)
+      %h3= t('main.variations.if_their_income_were_taken_care_of')
       = render @dreams

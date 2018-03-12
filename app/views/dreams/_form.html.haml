@@ -1,16 +1,27 @@
-= form_with(model: dream, local: true) do | form |
-  - if dream.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(product.errors.count, "error")
-        prohibited this dream from being saved:
-      %ul
-        - dream.errors.full_messages.each do |message|
-          %li= message
-  .form-group
-    .field
-      = form.label :caption, 'I would...'
-      = form.text_field :caption, placeholder: 'travel the world', type: 'text', class: 'form-control'
-  .form-group
-    .actions
-      = form.submit class: 'btn btn-primary', value: 'Share dream'
+- if user_signed_in?
+  .dream.new-dream
+    %h3= "#{title}"
+    = form_with(model: dream, local: true) do | form |
+      - if dream.errors.any?
+        #error_explanation
+          %h2
+            = pluralize(product.errors.count, "error")
+            prohibited this dream from being saved:
+          %ul
+            - dream.errors.full_messages.each do |message|
+              %li= message
+      .form-group
+        .field
+          = form.label :caption, t('main.variations.i_would')
+          = form.text_field :caption, placeholder: 'travel the world', type: 'text', class: 'form-control'
+      .form-group
+        .actions
+          = form.submit class: 'btn btn-primary', value: 'Share dream'
+- else
+  .dream.new-dream
+    %h3= t('main.variations.and_you_what_would_you_do')
+    %p= t('main.variations.join_our_users_long_call', users_count: @users_count)
+
+    .text-right
+      =link_to t('navigation.signed_out.register'), new_user_session_path, class: 'btn btn-primary'
+      =link_to t('navigation.signed_out.login'), new_user_registration_path, class: 'btn btn-secondary'
