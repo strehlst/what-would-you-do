@@ -1,5 +1,11 @@
 body {
   background-color: #ddd;
+  overflow-x: hidden !important;
+}
+
+.container-fluid {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 section {
@@ -14,7 +20,6 @@ section#alerts {
 section#alerts .alert {
   margin-top: 1.5rem;
 }
-
 
 @include media-breakpoint-up(sm) {
   .row-eq-height {
