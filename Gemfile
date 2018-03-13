@@ -82,6 +82,8 @@ group :development do
   gem 'letter_opener'
   # Use Dotenv to work with environment variables
   gem 'dotenv-rails'
+  # Use xray to debug HTML and CSS issues
+  gem 'xray-rails', '~> 0.3.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
