@@ -13,10 +13,10 @@
       .form-group
         .field
           = form.label :caption, t('main.variations.i_would')
-          = form.text_field :caption, placeholder: 'travel the world', type: 'text', class: 'form-control'
+          = form.text_field :caption, placeholder: t('dreams.examples.travel_the_world'), type: 'text', class: 'form-control'
       .form-group
         .actions
-          = form.submit class: 'btn btn-primary', value: 'Share dream'
+          = form.submit class: 'btn btn-primary', value: t('dictionary.actions.share')
 - else
   .dream.new-dream
     %h3= t('main.variations.and_you_what_would_you_do')

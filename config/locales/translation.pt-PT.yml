@@ -305,3 +305,11 @@ pt-PT:
     time_ago: há %{time}
     you_too: Tu também <3
     you_too_question: Tu também?
+    actions:
+      share: Partilhar
+  dreams:
+    examples:
+      travel_the_world: viajar pelo mundo
+  development:
+    alert:
+      review_app: 

@@ -309,3 +309,11 @@ fr-FR:
     time_ago: 
     you_too: 
     you_too_question: 
+    actions:
+      share: 
+  dreams:
+    examples:
+      travel_the_world: 
+  development:
+    alert:
+      review_app: 
