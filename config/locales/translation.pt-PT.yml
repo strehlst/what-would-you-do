@@ -310,3 +310,6 @@ pt-PT:
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
+  development:
+    alert:
+      review_app: 

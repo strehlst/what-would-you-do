@@ -36,3 +36,7 @@ en:
   dreams:
     examples:
       travel_the_world: 'travel the world'
+
+  development:
+    alert:
+      review_app: 'REVIEW APP | All data will eventually be deleted.'

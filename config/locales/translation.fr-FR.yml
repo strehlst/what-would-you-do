@@ -314,3 +314,6 @@ fr-FR:
   dreams:
     examples:
       travel_the_world: 
+  development:
+    alert:
+      review_app: 
