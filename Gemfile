@@ -50,6 +50,8 @@ gem 'pg', '~> 1.0'
 
 # Use translation.io service for i18n
 gem 'translation'
+# Use gettext syntax
+gem 'gettext'
 
 # Use cloudinary for image uploads
 gem 'cloudinary'
