@@ -295,6 +295,8 @@ fr-FR:
       that_is_what_other_people_would_do: 
       a_number_of_people_would_do_a_number_of_things: 
       if_their_income_were_taken_care_of: 
+      one_person_would_do_that_too: 
+      n_people_would_do_that_too: 
   navigation:
     signed_in:
       logout: 
@@ -317,3 +319,103 @@ fr-FR:
   development:
     alert:
       review_app: 
+  i18n_tasks:
+    add_missing:
+      added:
+        one: 
+        other: 
+    cmd:
+      args:
+        default_text: 
+        desc:
+          all_locales: 
+          confirm: 
+          data_format: 
+          key_pattern: 
+          key_pattern_to_rename: 
+          locale_to_translate_from: 
+          locales_filter: 
+          missing_types: 
+          new_key_name: 
+          nostdin: 
+          out_format: 
+          pattern_router: 
+          strict: 
+          value: 
+      desc:
+        add_missing: 
+        check_normalized: 
+        config: 
+        data: 
+        data_merge: 
+        data_remove: 
+        data_write: 
+        eq_base: 
+        find: 
+        gem_path: 
+        health: 
+        irb: 
+        missing: 
+        mv: 
+        normalize: 
+        remove_unused: 
+        rm: 
+        translate_missing: 
+        tree_convert: 
+        tree_filter: 
+        tree_merge: 
+        tree_mv_key: 
+        tree_rename_key: 
+        tree_set_value: 
+        tree_subtract: 
+        tree_translate: 
+        unused: 
+        xlsx_report: 
+      encourage:
+      - 
+      - 
+      - 
+      enum_list_opt:
+        invalid: 
+      enum_opt:
+        invalid: 
+      errors:
+        invalid_format: 
+        invalid_locale: 
+        invalid_missing_type:
+          one: 
+          other: 
+        pass_forest: 
+    common:
+      base_value: 
+      continue_q: 
+      key: 
+      locale: 
+      n_more: 
+      type: 
+      value: 
+    data_stats:
+      text: 
+      text_single_locale: 
+      title: 
+    google_translate:
+      errors:
+        no_api_key: 
+        no_results: 
+    health:
+      no_keys_detected: 
+    missing:
+      details_title: 
+      none: 
+    remove_unused:
+      confirm:
+        one: 
+        other: 
+      noop: 
+      removed: 
+    translate_missing:
+      translated: 
+    unused:
+      none: 
+    usages:
+      none: 
