@@ -2,6 +2,9 @@
   %h3{class: "h4#{' h5' if dream.caption.size > 30}"}
     = link_to "...#{dream.caption}", dream_path(dream)
   .strong.small.text-white
-    = "#{dream.embrace_count} #{dream.embrace_count==1?'person':'people'} would do this too!"
+    - if dream.embrace_count == 2
+      = t('main.variations.one_person_would_do_that_too')
+    - elsif dream.embrace_count > 2
+      = t('main.variations.n_people_would_do_that_too', n: dream.embrace_count-1)
   .text-right
     = render 'embraces/embrace_button', dream: dream
