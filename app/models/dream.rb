@@ -14,8 +14,4 @@ class Dream < ApplicationRecord
   def embraced?(user)
     Embrace.find_by(dream: self, user: user)
   end
-
-  def embrace_count
-    Embrace.all.where(dream: self).count
-  end
 end
