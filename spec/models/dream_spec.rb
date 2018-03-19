@@ -64,19 +64,28 @@ describe Dream, type: :model do
                    password: '12345?&@')
     end
 
+    let!(:third_user) do
+      User.create!(public_name: 'João',
+                   email: 'joao@wwyd.basicincome',
+                   password: '12345?&@')
+    end
+
     let!(:first_dream) { Dream.create!(caption: 'pay back my student loan') }
     let!(:second_dream) { Dream.create!(caption: 'live in Brazil for one year') }
     let!(:third_dream) { Dream.create!(caption: 'have more time for my mother') }
 
-    let!(:embrace) { Embrace.create!(user: first_user, dream: second_dream) }
-    let!(:embrace) { Embrace.create!(user: first_user, dream: second_dream) }
-    let!(:embrace) { Embrace.create!(user: second_user, dream: first_dream) }
+    let!(:first_embrace) { Embrace.create!(user: first_user, dream: second_dream) }
+    let!(:second_embrace) { Embrace.create!(user: second_user, dream: second_dream) }
+    let!(:third_embrace) { Embrace.create!(user: third_user, dream: second_dream) }
+    let!(:fourth_embrace) { Embrace.create!(user: third_user, dream: first_dream) }
+    let!(:fifth_embrace) { Embrace.create!(user: second_user, dream: first_dream) }
+    let!(:sixth_embrace) { Embrace.create!(user: second_user, dream: third_dream) }
 
-    xit 'returns a complete list of dreams' do
+    it 'returns a complete list of dreams' do
       expect(Dream.by_popularity_desc.count).to eq 3
     end
 
-    xit 'returns a list of dreams ordered by descending popularity' do
+    it 'returns a list of dreams ordered by descending popularity' do
       expect(Dream.by_popularity_desc.first).to eql second_dream
       expect(Dream.by_popularity_desc[1]).to eql first_dream
       expect(Dream.by_popularity_desc[2]).to eql third_dream
