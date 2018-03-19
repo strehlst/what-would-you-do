@@ -18,7 +18,8 @@ require 'sprockets/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-Dotenv::Railtie.load if Rails.env.development?
+Dotenv::Railtie.load
+Dotenv.load(".env.#{Rails.env}") unless Rails.env.production?
 
 module WhatWouldYouDo
   class Application < Rails::Application
