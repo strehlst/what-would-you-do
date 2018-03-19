@@ -12,6 +12,6 @@ class Dream < ApplicationRecord
   end
 
   def embraced?(user)
-    Embrace.find_by(dream: self, user: user)
+    Embrace.find_by(dream: self, user: user).present? ? true : false
   end
 end
