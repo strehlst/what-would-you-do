@@ -27,7 +27,7 @@ describe Dream, type: :model do
 
   context 'caption too short' do
     let(:dream) { Dream.create(caption: 'no') }
-    xit 'is not valid with a caption less than three caracters long' do
+    xit 'is not valid with a caption less than three characters long' do
       expect(:dream).not_to be_valid
     end
   end
