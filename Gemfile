@@ -65,6 +65,8 @@ group :development, :test do
   gem 'rubocop', '~> 0.53.0', require: false
   # Use RSpec for controllers, models and features
   gem 'rspec-rails', '~> 3.7'
+  # Use Dotenv to work with environment variables
+  gem 'dotenv-rails'
 end
 
 group :test do
@@ -84,8 +86,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use letter opener for e-mails
   gem 'letter_opener'
-  # Use Dotenv to work with environment variables
-  gem 'dotenv-rails'
   # Use xray to debug HTML and CSS issues
   gem 'xray-rails', '~> 0.3.1'
 end
