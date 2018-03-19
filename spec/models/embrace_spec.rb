@@ -47,9 +47,17 @@ describe Embrace, type: :model do
     let!(:third_dream) { Dream.create!(caption: 'have more time for my mother') }
 
     let!(:first_embrace) { Embrace.create!(user: first_user, dream: second_dream) }
-    let!(:second_embrace) { Embrace.create!(user: second_user, dream: second_dream, testimonial: 'My story of dealing with this...') }
+    let!(:second_embrace) do
+      Embrace.create!(user: second_user,
+                      dream: second_dream,
+                      testimonial: 'My story of dealing with this...')
+    end
     let!(:third_embrace) { Embrace.create!(user: third_user, dream: second_dream) }
-    let!(:fourth_embrace) { Embrace.create!(user: third_user, dream: first_dream, testimonial: 'Another story of dealing with soemthing else...') }
+    let!(:fourth_embrace) do
+      Embrace.create!(user: third_user,
+                      dream: first_dream,
+                      testimonial: 'Another story of dealing with soemthing else...')
+    end
     let!(:fifth_embrace) { Embrace.create!(user: second_user, dream: first_dream) }
     let!(:sixth_embrace) { Embrace.create!(user: second_user, dream: third_dream) }
 
@@ -63,7 +71,6 @@ describe Embrace, type: :model do
     it 'returns embraces ordered by descending created_at date' do
       expect(Embrace.created_at_desc.first.id).to eq sixth_embrace.id
     end
-
   end
 
   context 'valid' do
