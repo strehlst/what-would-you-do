@@ -17,5 +17,18 @@ describe Dream, type: :model do
     it 'is not valid without a caption' do
       expect(dream).to_not be_valid
     end
+
+    let(:dream) { Dream.create(caption: '') }
+
+    it 'is not valid without a caption' do
+      expect(dream).to_not be_valid
+    end
+  end
+
+  context 'caption too short' do
+    let(:dream) { Dream.create(caption: 'no') }
+    xit 'is not valid with a caption less than three caracters long' do
+      expect(:dream).not_to be_valid
+    end
   end
 end
