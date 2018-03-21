@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'pp'
 
-RSpec.describe DreamsController, type: :controller do
+describe DreamsController, type: :controller do
   let!(:dream) { Dream.create!(caption: I18n.t('dreams.examples.travel_the_world')) }
   let(:user) do
     User.create!(public_name: 'User name',
