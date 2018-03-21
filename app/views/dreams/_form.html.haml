@@ -1,6 +1,6 @@
 - if user_signed_in?
   .dream.new-dream
-    %h3= "#{title}"
+    %h3= t('main.variations.what_else')
     = form_with(model: dream, local: true) do | form |
       - if dream.errors.any?
         #error_explanation

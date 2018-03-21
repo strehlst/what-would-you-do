@@ -1,33 +1,28 @@
 %section.container-fluid
-  .row
+  .row.form-wrapper.narrow-centered
     .col-lg-12
-      %h1 Sign up
-      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      %h1= t('dictionary.actions.sign_up')
+      = form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'sign-in') do |f|
         = devise_error_messages!
         .form-group
           .field
+            = f.text_field :public_name, placeholder: :public_name ,autofocus: true, autocomplete: 'name', class: 'form-control'
             = f.label :public_name
-            %br
-            = f.text_field :public_name, autofocus: true, autocomplete: 'name', class: 'form-control'
         .form-group
           .field
+            = f.email_field :email, placeholder: :email, autocomplete: 'email', class: 'form-control'
             = f.label :email
-            %br
-            = f.email_field :email, autocomplete: 'email', class: 'form-control'
         .form-group
           .field
+            = f.password_field :password, placeholder: :password, autocomplete: 'off', class: 'form-control'
             = f.label :password
             - if @minimum_password_length
               %em
                 (#{@minimum_password_length} characters minimum)
-            %br
-            = f.password_field :password, autocomplete: 'off', class: 'form-control'
         .form-group
           .field
+            = f.password_field :password_confirmation, placeholder: :password_confirmation, autocomplete: 'off', class: 'form-control'
             = f.label :password_confirmation
-            %br
-            = f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control'
-        .form-group
-          .actions
-            = f.submit 'Sign up', class: 'btn btn-primary form-control'
+        .actions
+          = f.submit t('dictionary.actions.sign_up'), class: 'btn btn-primary form-control'
       = render 'devise/shared/links'

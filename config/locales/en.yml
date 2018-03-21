@@ -10,6 +10,7 @@ en:
       what_else_would_you_do: 'What else would you do?'
       and_you_what_would_you_do: 'And you, what would you do?'
       i_would: 'I would...'
+      what_else: 'What else?'
       that_is_what_other_people_would_do: "That's what other people would do:"
       one_person_would_do_that_too: 'One person would do that too!'
       n_people_would_do_that_too: '%{n} people would do that too!'
@@ -23,6 +24,9 @@ en:
     you_too_question: 'You too?'
     actions:
       share: 'Share'
+      share_your_dreams: 'Share your dreams'
+      sign_up: 'Sign up'
+      log_in: 'Log in'
 
   navigation:
     about: 'About'

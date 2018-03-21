@@ -8,6 +8,13 @@ body {
   overflow-x: hidden !important;
 }
 
+
+.narrow-centered {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 section {
   padding-bottom: 3rem;
   background-color: #fff;
