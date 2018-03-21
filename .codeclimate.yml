@@ -32,3 +32,5 @@ exclude_paths:
 - script/
 - spec/
 - vendor/
+- bin/
+- public/
