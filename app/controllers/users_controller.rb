@@ -4,15 +4,13 @@ class UsersController < ApplicationResourceController
   include MetricsHelper
   before_action :authenticate_user!, except: %i[show]
 
-  # GET /users/1
   def show
   end
 
-  # GET /users/1/edit
+=begin
   def edit
   end
 
-  # PATCH/PUT /users/1
   def update
     if @user.update(resource_params)
       redirect_to @user, notice: 'User was successfully updated.'
@@ -26,6 +24,7 @@ class UsersController < ApplicationResourceController
     @user.destroy
     redirect_to users_url, notice: 'User was successfully destroyed.'
   end
+=end
 
   def dreams
     @new_dream = Dream.new
