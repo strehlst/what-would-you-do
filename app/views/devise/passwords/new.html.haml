@@ -1,15 +1,13 @@
 %section.container-fluid
-  .row
+  .row.form-wrapper.narrow-centered
     .col-lg-12
-      %h1 Forgot your password?
+      %h1= t('devise.dictionary.forgot_your_password')
       = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
         = devise_error_messages!
         .form-group
           .field
-            = f.label :email
-            %br
             = f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control'
-        .form-group
-          .actions
-            = f.submit 'Send me reset password instructions', class: 'btn btn-primary form-control'
-      = render 'devise/shared/links'
+            = f.label :email
+        .actions
+          = f.submit t('devise.dictionary.send_me_password_reset_instructions'), class: 'btn btn-primary form-control'
+= render 'devise/shared/links'

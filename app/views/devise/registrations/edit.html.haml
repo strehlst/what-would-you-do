@@ -1,39 +1,33 @@
 %section.container-fluid
-  .row
+  .row.form-wrapper.narrow-centered
     .col-lg-12
       %h1= t('devise.controllers.registrations.edit.title')
       = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
         = devise_error_messages!
         .form-group
           .field
-            = f.label :email, t('devise.dictionary.email')
-            %br
             = f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control'
+            = f.label :email, t('devise.dictionary.email')
           - if devise_mapping.confirmable? && resource.pending_reconfirmation?
             %div= t('devise.controllers.registrations.confirm.currently_waiting_for_confirmation', email: resource.unconfirmed_email)
         .form-group
           .field
+            = f.password_field :password, autocomplete: 'off', class: 'form-control'
             = f.label :password, t('devise.dictionary.password')
             %i= "(#{t('devise.controllers.registrations.edit.password.leave_blank_if_no_change_desired')})"
-            %br
-            = f.password_field :password, autocomplete: 'off', class: 'form-control'
             - if @minimum_password_length
               %em= t('devise.dictionary.characters_minimum', minimum_length: @minimum_password_length)
-
         .form-group
           .field
-            = f.label :password_confirmation, t('devise.dictionary.password_confirmation')
-            %br
             = f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control'
+            = f.label :password_confirmation, t('devise.dictionary.password_confirmation')
         .form-group
           .field
+            = f.password_field :current_password, autocomplete: 'off', class: 'form-control'
             = f.label :current_password, t('devise.dictionary.current_password')
             %i= "(#{t('devise.controllers.registrations.edit.password.we_need_your_current_password_to_confirm')})"
-            %br
-            = f.password_field :current_password, autocomplete: 'off', class: 'form-control'
-        .form-group
-          .actions
-            = f.submit t('devise.dictionary.update'), class: 'btn btn-primary form-control'
+        .actions
+          = f.submit t('devise.dictionary.update'), class: 'btn btn-primary form-control'
       %h1= t('devise.controllers.registrations.cancel.cancel_my_account')
       %p
         = t('devise.controllers.registrations.cancel.are_you_unhappy')
