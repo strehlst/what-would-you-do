@@ -224,7 +224,7 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
-    rubocop (0.53.0)
+    rubocop (0.54.0)
       parallel (~> 1.10)
       parser (>= 2.5)
       powerpack (~> 0.1)
@@ -322,7 +322,7 @@ DEPENDENCIES
   rails (~> 5.1.5)
   rails-controller-testing
   rspec-rails (~> 3.7)
-  rubocop (~> 0.53.0)
+  rubocop (~> 0.54.0)
   sass-rails (~> 5.0)
   simplecov
   spring
