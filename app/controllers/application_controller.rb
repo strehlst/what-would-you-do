@@ -16,6 +16,6 @@ class ApplicationController < ActionController::Base
 
     session[:locale] = requested_locale
     I18n.locale      = requested_locale
-    @application_locale = requested_locale.split('-')[0]
+    @application_locale = requested_locale.to_s.split('-')[0]
   end
 end
