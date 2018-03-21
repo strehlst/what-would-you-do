@@ -269,6 +269,8 @@ fr-FR:
       update: 
       cancel: 
       back: 
+      forgot_your_password: 
+      send_me_password_reset_instructions: 
     controllers:
       registrations:
         edit:
@@ -297,6 +299,7 @@ fr-FR:
       if_their_income_were_taken_care_of: 
       one_person_would_do_that_too: 
       n_people_would_do_that_too: 
+      what_else: 
   navigation:
     signed_in:
       logout: 
@@ -313,6 +316,9 @@ fr-FR:
     you_too_question: 
     actions:
       share: 
+      share_your_dreams: 
+      sign_up: 
+      log_in: 
   dreams:
     examples:
       travel_the_world: 

@@ -264,6 +264,8 @@ pt-PT:
       update: 
       cancel: 
       back: 
+      forgot_your_password: 
+      send_me_password_reset_instructions: 
     controllers:
       registrations:
         edit:
@@ -294,6 +296,7 @@ pt-PT:
       if_their_income_were_taken_care_of: se o rendimento delas fosse garantido
       one_person_would_do_that_too: Uma pessoa iria fazer isto também!
       n_people_would_do_that_too: "%{n} pessoas iriam fazer isto também!"
+      what_else: Que mais?
   navigation:
     signed_in:
       logout: 
@@ -310,6 +313,9 @@ pt-PT:
     you_too_question: Tu também?
     actions:
       share: Partilhar
+      share_your_dreams: Partilhe o que tu farias
+      sign_up: 
+      log_in: 
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
