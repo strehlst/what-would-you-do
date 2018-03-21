@@ -27,13 +27,17 @@ class DreamsController < ApplicationResourceController
       redirect_to @dream,
                   notice: 'Dream was successfully created.'
     else
+      @dreams = Dream.by_popularity_desc(5)
       render 'new'
     end
   end
 
   def embrace
     load_resource
-    if Embrace.create(dream: @dream, user: current_user)
+    if Embrace.find_by(dream: @dream, user: current_user).present?
+      redirect_to @dream,
+                  alert: 'Dream was already embraced.'
+    elsif Embrace.create(dream: @dream, user: current_user)
       redirect_to @dream,
                   notice: 'Dream was successfully embraced.'
     else
@@ -44,7 +48,10 @@ class DreamsController < ApplicationResourceController
 
   def disembrace
     load_resource
-    if Embrace.find_by(dream: @dream, user: current_user).destroy
+    if !Embrace.find_by(dream: @dream, user: current_user).present?
+      redirect_to @dream,
+                  alert: 'Dream is not embraced.'
+    elsif Embrace.find_by(dream: @dream, user: current_user).destroy
       redirect_to @dream,
                   notice: 'Dream was successfully disembraced.'
     else

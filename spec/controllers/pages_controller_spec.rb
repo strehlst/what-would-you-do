@@ -3,7 +3,6 @@
 require 'rails_helper'
 
 describe PagesController, type: :controller do
-
   context 'GET #about' do
     it 'renders the about template' do
       get :about
