@@ -6,8 +6,8 @@
         = devise_error_messages!
         .form-group
           .field
-            = f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control'
-            = f.label :email
+            = f.email_field :email, placeholder: :email, autofocus: true, autocomplete: 'email', class: 'form-control'
+            = f.label :email, t('devise.dictionary.email')
         .actions
           = f.submit t('devise.dictionary.send_me_password_reset_instructions'), class: 'btn btn-primary form-control'
 = render 'devise/shared/links'

@@ -33,6 +33,8 @@ en:
       log_in: Log in
       read: Read
       read_whole_article: Read the whole article
+    forms:
+      public_name: Public name
     innovation: innovation
     interview: interview
     economy: economy
@@ -49,7 +51,7 @@ en:
   navigation:
     about: About
     contact: Contact
-    media_coverage: Recent press articles
+    articles: Recent press articles
     signed_out:
       register: Register
       login: Login
@@ -61,10 +63,13 @@ en:
     examples:
       travel_the_world: travel the world
       pay_back_student_loan: pay back my student loan
+    errors:
+      caption_too_short: Please enter at least 3 characters
+      caption_too_long: Please enter less than 255 characters
   pages:
     front_page:
       news_countdown: 'We will unveil more information in %{time}'
-    media_coverage:
+    articles:
       description: These are recent articles covering or mentioning basic income.
     about:
       description:  We are creating a place to discover the advantages a basic income could bring to your live, our society and the future of work.

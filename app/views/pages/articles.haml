@@ -1,11 +1,13 @@
 %section.container-fluid
   .row
     .col-lg-12
-      %h1= t('navigation.media_coverage')
+      %h1= t('navigation.articles')
 
+%section.container-fluid
+  .row
     .col-sm-12.col-lg-3
       %p
-        = t('pages.media_coverage.description')
+        = t('pages.articles.description')
     .col-sm-12.col-lg-9
       - @articles.each do | article |
         .embrace.d-block

@@ -11,9 +11,20 @@ describe Dream, type: :model do
     end
 
     context 'when caption too short' do
-      let(:dream) { Dream.create(caption: 'no') }
-      xit 'is not valid with a caption less than three characters long' do
-        expect(:dream).not_to be_valid
+      let(:dream) { Dream.new(caption: 'no') }
+      it 'is not valid with a caption less than three characters long' do
+        expect(dream).not_to be_valid
+      end
+      let(:dream) { Dream.new(caption: ' n  ') }
+      it 'is not valid with a caption less than three characters long, whitespace stripped off' do
+        expect(dream).not_to be_valid
+      end
+    end
+
+    context 'when caption too long' do
+      let(:dream) { Dream.create(caption: 'n' * 256) }
+      it 'is not valid with a caption more than 255 characters long' do
+        expect(dream).not_to be_valid
       end
     end
   end

@@ -272,6 +272,7 @@ fr-FR:
       back: 
       forgot_your_password: 
       send_me_password_reset_instructions: 
+      new_password: 
     controllers:
       registrations:
         edit:
@@ -313,7 +314,7 @@ fr-FR:
     signed_out:
       register: 
       login: 
-    media_coverage: 
+    articles: 
   dictionary:
     time_ago: 
     you_too: 
@@ -338,10 +339,15 @@ fr-FR:
     work: 
     interview: 
     politics: 
+    forms:
+      public_name: 
   dreams:
     examples:
       travel_the_world: 
       pay_back_student_loan: 
+    errors:
+      caption_too_short: 
+      caption_too_long: 
   development:
     alert:
       review_app: 
@@ -446,11 +452,11 @@ fr-FR:
     usages:
       none: 
   pages:
-    media_coverage:
-      description: 
     about:
       description: 
     contact:
       via_email: 
     front_page:
       news_countdown: 
+    articles:
+      description: 
