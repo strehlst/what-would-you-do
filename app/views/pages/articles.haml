@@ -1,0 +1,30 @@
+%section.container-fluid
+  .row
+    .col-lg-12
+      %h1= t('navigation.media_coverage')
+
+    .col-sm-12.col-lg-3
+      %p
+        = t('pages.media_coverage.description')
+    .col-sm-12.col-lg-9
+      - @articles.each do | article |
+        .embrace.d-block
+          %div
+            %blockquote.blockquote
+              .text-center.float-left.ml-3
+                %h4.display-5
+                  %span.badge.badge-secondary{style: "#{article[:curated]?'background-color: #b2317a;':''}"}
+                    = Date.parse(article[:date]).strftime('%-d')
+                %h6
+                  = t('date.abbr_month_names')[Date.parse(article[:date]).strftime('%-m').to_i].upcase
+                  %small.d-block.text-muted
+                    = Date.parse(article[:date]).strftime('%Y')
+              %div{style: 'padding: 0 20px 0 80px;'}
+                %h2.h5.mb-1
+                  %small.d-block.mb-1
+                    = article[:category].upcase
+                  = link_to article[:url], target: '_blank' do
+                    = article[:title]
+                %footer.blockquote-footer
+                  %strong= article[:author]
+                  = '&nbsp;// '.html_safe + article[:publisher]
