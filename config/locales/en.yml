@@ -1,49 +1,69 @@
 ---
 en:
   main:
-    what_would_you_do_long_caption: 'What would you do if your income were taken care of?'
+    what_would_you_do_long_caption: What would you do if your income were taken care
+      of?
     partials:
-      what_would_you_do: 'What would you do'
-      if_your_income_were_taken_care_of: 'if your income were taken care of?'
+      what_would_you_do: What would you do
+      if_your_income_were_taken_care_of: if your income were taken care of?
     variations:
-      and_what_would_you_do: 'And what would you do?'
-      what_else_would_you_do: 'What else would you do?'
-      and_you_what_would_you_do: 'And you, what would you do?'
-      i_would: 'I would...'
-      what_else: 'What else?'
-      that_is_what_other_people_would_do: "That's what other people would do:"
-      one_person_would_do_that_too: 'One person would do that too!'
-      n_people_would_do_that_too: '%{n} people would do that too!'
-      a_number_of_people_would_do_a_number_of_things: '%{users_count} humans would do %{dreams_count} things'
-      if_their_income_were_taken_care_of: 'if their income were taken care of'
-      join_our_users_long_call: 'Join %{users_count} users, see what they would do and imagine how your life could be if your income were taken care of.'
-
+      and_what_would_you_do: And what would you do?
+      what_else_would_you_do: What else would you do?
+      and_you_what_would_you_do: And you, what would you do?
+      i_would: I would...
+      what_else: What else?
+      that_is_what_other_people_would_do: 'That''s what other people would do:'
+      one_person_would_do_that_too: One person would do that too!
+      n_people_would_do_that_too: "%{n} people would do that too!"
+      a_number_of_people_would_do_a_number_of_things: "%{users_count} humans would
+        do %{dreams_count} things"
+      if_their_income_were_taken_care_of: if their income were taken care of
+      join_our_users_long_call: Join %{users_count} users, see what they would do
+        and imagine how your life could be if your income were taken care of.
   dictionary:
-    time_ago: '%{time} ago'
-    you_too: 'You too! <3'
-    you_too_question: 'You too?'
+    time_ago: "%{time} ago"
+    you_too: You too! <3
+    you_too_question: You too?
     actions:
-      share: 'Share'
-      share_your_dreams: 'Share your dreams'
-      sign_up: 'Sign up'
-      log_in: 'Log in'
-
+      share: Share
+      share_your_dreams: Share your dreams
+      sign_up: Sign up
+      log_in: Log in
+      read: Read
+      read_whole_article: Read the whole article
+    innovation: innovation
+    interview: interview
+    economy: economy
+    society: society
+    politics: politics
+    welfare_state: welfare state
+    social_security: social security
+    implementation: implementation
+    automization: automization
+    un_employment: "(un-)employment"
+    unions: unions
+    church: church
+    work: work
   navigation:
-    about: 'About'
-    contact: 'Contact'
+    about: About
+    contact: Contact
+    media_coverage: Recent press articles
     signed_out:
-      register: 'Register'
-      login: 'Login'
+      register: Register
+      login: Login
     signed_in:
-      i_would: 'I would...'
-      my_profile: 'My profile'
-      logout: 'Logout'
-
+      i_would: I would...
+      my_profile: My profile
+      logout: Logout
   dreams:
     examples:
-      travel_the_world: 'travel the world'
-      pay_back_student_loan: 'pay back my student loan'
-
+      travel_the_world: travel the world
+      pay_back_student_loan: pay back my student loan
+  pages:
+    media_coverage:
+      description: These are recent articles covering or mentioning basic income.
   development:
     alert:
-      review_app: 'REVIEW APP | All data will eventually be deleted.'
+      review_app: REVIEW APP | All data will eventually be deleted.
+  errors:
+    page_not_found: Page not found

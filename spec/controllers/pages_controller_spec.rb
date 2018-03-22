@@ -18,10 +18,17 @@ describe PagesController, type: :controller do
     end
   end
   context 'GET #frontpage' do
-    it 'renders the about frontpage' do
+    it 'renders the frontpage template' do
       get :frontpage
       expect(response).to have_http_status(:success)
       expect(response).to render_template('frontpage')
+    end
+  end
+  context 'GET #articles' do
+    it 'renders the media template' do
+      get :articles
+      expect(response).to have_http_status(:success)
+      expect(response).to render_template('articles')
     end
   end
   context 'GET #not_found' do
