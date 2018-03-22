@@ -3,4 +3,4 @@
     .col-xs-12.col-md-6
       %h1= t('navigation.about')
       %p= t('pages.about.description')
-      %p= t('pages.contact.via_email', email: 'steven{at}oquefarias.pt')
+      %p= t('pages.contact.via_email', email: ENV['CONTACT_EMAIL_ADDRESS'])

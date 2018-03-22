@@ -52,8 +52,12 @@
             %p#alert.alert.alert-warning= alert
 
     = yield
+    %footer.footer
+      .container-fluid.bg-dark.p-3
+        %p.text-white.text-center.font-weight-light
+          = '2018 &copy; O que farias? | oquefarias.pt'.html_safe
 
-  -if Rails.env.development?
+  -if Rails.env.development? && false
     = render 'shared/development_inspection'
   -if Rails.env.production?
     :javascript

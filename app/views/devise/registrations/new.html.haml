@@ -7,22 +7,19 @@
         .form-group
           .field
             = f.text_field :public_name, placeholder: :public_name ,autofocus: true, autocomplete: 'name', class: 'form-control'
-            = f.label :public_name
+            = f.label :public_name, t('dictionary.forms.public_name')
         .form-group
           .field
             = f.email_field :email, placeholder: :email, autocomplete: 'email', class: 'form-control'
-            = f.label :email
+            = f.label :email, t('devise.dictionary.email')
         .form-group
           .field
             = f.password_field :password, placeholder: :password, autocomplete: 'off', class: 'form-control'
-            = f.label :password
-            - if @minimum_password_length
-              %em
-                (#{@minimum_password_length} characters minimum)
+            = f.label :password, t('devise.dictionary.password') + "#{@minimum_password_length?" (#{@minimum_password_length} characters minimum)":''}"
         .form-group
           .field
             = f.password_field :password_confirmation, placeholder: :password_confirmation, autocomplete: 'off', class: 'form-control'
-            = f.label :password_confirmation
+            = f.label :password_confirmation, t('devise.dictionary.password_confirmation')
         .actions
           = f.submit t('dictionary.actions.sign_up'), class: 'btn btn-primary form-control'
-      = render 'devise/shared/links'
+= render 'devise/shared/links'

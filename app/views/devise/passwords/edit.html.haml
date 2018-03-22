@@ -7,17 +7,12 @@
         = f.hidden_field :reset_password_token
         .form-group
           .field
-            = f.password_field :password, autofocus: true, autocomplete: 'off', class: 'form-control'
-            = f.label :password, 'New password'
-            %br
-            - if @minimum_password_length
-              %em
-                (#{t('devise.dictionary.characters_minimum', minimum_length: @minimum_password_length)})
+            = f.password_field :password, placeholder: :password, autofocus: true, autocomplete: 'off', class: 'form-control'
+            = f.label :password, t('devise.dictionary.new_password')
         .form-group
           .field
-            = f.label :password_confirmation, 'Confirm new password'
-            %br
-            = f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control'
+            = f.password_field :password_confirmation, placeholder: :password_confirmation, autocomplete: 'off', class: 'form-control'
+            = f.label :password_confirmation, t('devise.dictionary.password_confirmation')
         .actions
           = f.submit 'Change my password', class: 'btn btn-primary form-control'
       = render 'devise/shared/links'
