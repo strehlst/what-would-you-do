@@ -3,9 +3,11 @@ en:
   main:
     what_would_you_do_long_caption: What would you do if your income were taken care
       of?
+    what_if_suddenly_you_received_a_thousand_euros_per_month: What you do if, starting tomorrow, you received a basic income?
     partials:
       what_would_you_do: What would you do
       if_your_income_were_taken_care_of: if your income were taken care of?
+      i_would: 'I would'
     variations:
       and_what_would_you_do: And what would you do?
       what_else_would_you_do: What else would you do?
@@ -60,8 +62,14 @@ en:
       travel_the_world: travel the world
       pay_back_student_loan: pay back my student loan
   pages:
+    front_page:
+      news_countdown: 'We will unveil more information in %{time}'
     media_coverage:
       description: These are recent articles covering or mentioning basic income.
+    about:
+      description:  We are creating a place to discover the advantages a basic income could bring to your live, our society and the future of work.
+    contact:
+      via_email: 'Send a message to %{email} if you have more questions.'
   development:
     alert:
       review_app: REVIEW APP | All data will eventually be deleted.

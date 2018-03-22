@@ -289,6 +289,7 @@ fr-FR:
     partials:
       what_would_you_do: 
       if_your_income_were_taken_care_of: 
+      i_would: 
     variations:
       and_what_would_you_do: 
       what_else_would_you_do: 
@@ -301,6 +302,7 @@ fr-FR:
       one_person_would_do_that_too: 
       n_people_would_do_that_too: 
       what_else: 
+    what_if_suddenly_you_received_a_thousand_euros_per_month: 
   navigation:
     signed_in:
       logout: 
@@ -446,3 +448,9 @@ fr-FR:
   pages:
     media_coverage:
       description: 
+    about:
+      description: 
+    contact:
+      via_email: 
+    front_page:
+      news_countdown: 

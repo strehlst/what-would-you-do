@@ -1,6 +1,6 @@
 .dream
   %h3{class: "h4#{' h5' if dream.caption.size > 30}"}
-    = link_to "...#{dream.caption}", dream_path(dream)
+    = link_to '... ' + dream.caption, dream_path(dream)
   .strong.small.text-white
     - if dream.embraces.count == 2
       = t('main.variations.one_person_would_do_that_too')

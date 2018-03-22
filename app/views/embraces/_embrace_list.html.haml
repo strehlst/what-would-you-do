@@ -8,7 +8,7 @@
         = link_to user_path(embrace.user), class: 'float-left' do
           = image_tag quadratic_image_path(embrace.user.avatar_url, 60), class: 'img-fluid rounded-circle'
         %div{style: 'padding: 0 120px 0 80px;'}
-          %p.mb-0{class: "#{' small' if embrace.dream.caption.size > 50}"}= embrace.dream.caption
+          %p.mb-0{class: "#{' small' if embrace.dream.caption.size > 50}"}= t('main.partials.i_would') + ' '+ embrace.dream.caption
           %footer.blockquote-footer
             %strong= embrace.user.public_name
             = t('dictionary.time_ago', time: distance_of_time_in_words(Time.now - embrace.created_at))
