@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   delete 'dreams/:id/disembrace', to: 'dreams#disembrace', as: 'disembrace_dream'
   get 'about', to: 'pages#about', as: 'pages_about'
   get 'contact', to: 'pages#contact', as: 'pages_contact'
+  get 'articles', to: 'pages#articles', as: 'pages_articles'
   get 'static/not-found', to: 'pages#not_found', as: 'pages_not_found'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
