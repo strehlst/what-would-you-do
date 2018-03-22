@@ -121,6 +121,7 @@ fr-FR:
     unavailable_session: 
     unacceptable_request: 
     connection_refused: 
+    page_not_found: 
   activerecord:
     errors:
       messages:
@@ -310,6 +311,7 @@ fr-FR:
     signed_out:
       register: 
       login: 
+    media_coverage: 
   dictionary:
     time_ago: 
     you_too: 
@@ -319,9 +321,25 @@ fr-FR:
       share_your_dreams: 
       sign_up: 
       log_in: 
+      read: 
+      read_whole_article: 
+    innovation: 
+    economy: 
+    society: 
+    implementation: 
+    welfare_state: 
+    automization: 
+    un_employment: 
+    unions: 
+    church: 
+    social_security: 
+    work: 
+    interview: 
+    politics: 
   dreams:
     examples:
       travel_the_world: 
+      pay_back_student_loan: 
   development:
     alert:
       review_app: 
@@ -425,3 +443,6 @@ fr-FR:
       none: 
     usages:
       none: 
+  pages:
+    media_coverage:
+      description: 

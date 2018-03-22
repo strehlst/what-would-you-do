@@ -119,6 +119,7 @@ pt-PT:
     unavailable_session: 
     unacceptable_request: 
     connection_refused: 
+    page_not_found: 
   activerecord:
     errors:
       messages:
@@ -307,6 +308,7 @@ pt-PT:
     signed_out:
       register: Registo
       login: Login
+    media_coverage: Artigos recentes
   dictionary:
     time_ago: há %{time}
     you_too: Tu também <3
@@ -316,9 +318,25 @@ pt-PT:
       share_your_dreams: Partilhe o que tu farias
       sign_up: 
       log_in: 
+      read: Ler
+      read_whole_article: Ler artigo inteiro
+    innovation: inovação
+    economy: economia
+    society: sociedade
+    implementation: 
+    welfare_state: estado social
+    automization: 
+    un_employment: "(des-)emprego"
+    unions: 
+    church: 
+    social_security: segurança social
+    work: trabalho
+    interview: entrevista
+    politics: política
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
+      pay_back_student_loan: 
   development:
     alert:
       review_app: 
@@ -422,3 +440,6 @@ pt-PT:
       none: 
     usages:
       none: 
+  pages:
+    media_coverage:
+      description: Estes são artigos recentes sobre o rendimento básico.
