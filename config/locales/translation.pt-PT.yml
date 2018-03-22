@@ -284,20 +284,23 @@ pt-PT:
     partials:
       what_would_you_do: O que farias
       if_your_income_were_taken_care_of: se o teu rendimento fosse garantido?
+      i_would: Eu iria
     variations:
       and_what_would_you_do: E o que farias tu?
       what_else_would_you_do: Que mais farias?
-      and_you_what_would_you_do: E tu, o que farias tu?
+      and_you_what_would_you_do: E tu, o que farias?
       i_would: Eu iria...
       join_our_users_long_call: Junta-te a %{users_count} pessoas, descobre o que
         eles iriam fazer e como a tua pode ser se o teu rendimento fosse garantido.
-      that_is_what_other_people_would_do: 'Isto é que fariam os outros:'
+      that_is_what_other_people_would_do: 'Isto é o que outros fariam:'
       a_number_of_people_would_do_a_number_of_things: "%{users_count} pessoas fariam
         %{dreams_count} coisas"
       if_their_income_were_taken_care_of: se o rendimento delas fosse garantido
-      one_person_would_do_that_too: Uma pessoa iria fazer isto também!
+      one_person_would_do_that_too: Uma pessoa faria isto também!
       n_people_would_do_that_too: "%{n} pessoas iriam fazer isto também!"
       what_else: Que mais?
+    what_if_suddenly_you_received_a_thousand_euros_per_month: O que farias se, a partir
+      de amanhã, recebesses 1.000 EUR por mês durante um ano?
   navigation:
     signed_in:
       logout: 
@@ -443,3 +446,11 @@ pt-PT:
   pages:
     media_coverage:
       description: Estes são artigos recentes sobre o rendimento básico.
+    about:
+      description: 'Aqui criamos um lugar para descobrires quais são as vantagens
+        que uma garantia financeira mensal poderia trazer para a tua vida, para a
+        nossa sociedade e para o futuro do trabalho. '
+    contact:
+      via_email: 
+    front_page:
+      news_countdown: Aqui irás encontrar mais informações em %{time}
