@@ -174,15 +174,15 @@ pt-PT:
     select:
       prompt: Por favor seleccione
     submit:
-      create: Criar %{model}
-      update: Actualizar %{model}
+      create: A criar
+      update: Atualizar %{model}
       submit: Gravar %{model}
   flash:
     actions:
       create:
-        notice: 
+        notice: Obrigado para partilhares isso connosco!
       update:
-        notice: 
+        notice: A atualização foi efectuada com sucesso. Obrigado!
       destroy:
         notice: 
         alert: 
@@ -241,9 +241,9 @@ pt-PT:
       update_needs_confirmation: A sua conta foi actualizada com sucesso, mas precisamos
         de confirmar o seu email. Por favor veja o seu email e clique no link para
         finalizar a confirmação do seu email.
-      updated: A sua conta foi actualizada com sucesso.
+      updated: A tua conta foi atualizada com sucesso.
     sessions:
-      signed_in: Autenticação efectuada com sucesso.
+      signed_in: Autenticação efectuada com sucesso. Bem-vindo!
       signed_out: Saiu da sessão com sucesso.
       already_signed_out: Sessão terminada com sucesso.
     unlocks:
@@ -257,16 +257,17 @@ pt-PT:
       email: Endereço de email
       password: Senha
       are_you_sure: 
-      password_confirmation: 
+      password_confirmation: Confirmação da senha
       current_password: 
       characters_minimum: 
       characters_maximum: 
       save: 
-      update: 
+      update: Atualizar
       cancel: 
       back: 
-      forgot_your_password: 
+      forgot_your_password: Esqueceste a tua senha?
       send_me_password_reset_instructions: 
+      new_password: Nova senha
     controllers:
       registrations:
         edit:
@@ -275,8 +276,8 @@ pt-PT:
             leave_blank_if_no_change_desired: 
             we_need_your_current_password_to_confirm: 
         cancel:
-          are_you_unhappy: 
-          cancel_my_account: 
+          are_you_unhappy: Infeliz?
+          cancel_my_account: Cancelar meu registo
         confirm:
           currently_waiting_for_confirmation: 
   main:
@@ -311,7 +312,7 @@ pt-PT:
     signed_out:
       register: Registo
       login: Login
-    media_coverage: Artigos recentes
+    articles: Artigos recentes
   dictionary:
     time_ago: há %{time}
     you_too: Tu também <3
@@ -319,8 +320,8 @@ pt-PT:
     actions:
       share: Partilhar
       share_your_dreams: Partilhe o que tu farias
-      sign_up: 
-      log_in: 
+      sign_up: Registo
+      log_in: Login
       read: Ler
       read_whole_article: Ler artigo inteiro
     innovation: inovação
@@ -336,10 +337,15 @@ pt-PT:
     work: trabalho
     interview: entrevista
     politics: política
+    forms:
+      public_name: Nome público
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
       pay_back_student_loan: 
+    errors:
+      caption_too_short: 
+      caption_too_long: 
   development:
     alert:
       review_app: 
@@ -444,13 +450,13 @@ pt-PT:
     usages:
       none: 
   pages:
-    media_coverage:
-      description: Estes são artigos recentes sobre o rendimento básico.
     about:
       description: 'Aqui criamos um lugar para descobrires quais são as vantagens
         que uma garantia financeira mensal poderia trazer para a tua vida, para a
         nossa sociedade e para o futuro do trabalho. '
     contact:
-      via_email: 
+      via_email: Envia uma mensagem para %{email} para saber mais.
     front_page:
       news_countdown: Aqui irás encontrar mais informações em %{time}
+    articles:
+      description: Estes são artigos recentes sobre o rendimento básico.
