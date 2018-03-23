@@ -199,11 +199,11 @@ pt-PT:
       inactive: A sua conta ainda não foi activada.
       invalid: O endereço de email ou a palavra-passe são inválidos.
       locked: A sua conta está bloqueada.
-      last_attempt: Tem mais uma tentativa antes da sua conta ser bloqueada.
+      last_attempt: Tens mais uma tentativa antes da tua conta ser bloqueada.
       not_found_in_database: O endereço de email ou a palavra-passe são inválidos.
       timeout: A sua sessão expirou, por favor autentique-se novamente para continuar.
-      unauthenticated: Antes de continuar tem de se autenticar ou efectuar um registo.
-      unconfirmed: Tem de confirmar a sua conta antes de continuar.
+      unauthenticated: Antes de continuar tens de te autenticar ou efectuar um registo.
+      unconfirmed: Tens de confirmar a tua conta antes de continuar.
     mailer:
       confirmation_instructions:
         subject: Instruções de confirmação
@@ -292,7 +292,7 @@ pt-PT:
       and_you_what_would_you_do: E tu, o que farias?
       i_would: Eu iria...
       join_our_users_long_call: Junta-te a %{users_count} pessoas, descobre o que
-        eles iriam fazer e como a tua pode ser se o teu rendimento fosse garantido.
+        eles fariam e como a tua vida poderia ser se o teu rendimento fosse garantido.
       that_is_what_other_people_would_do: 'Isto é o que outros fariam:'
       a_number_of_people_would_do_a_number_of_things: "%{users_count} pessoas fariam
         %{dreams_count} coisas"
