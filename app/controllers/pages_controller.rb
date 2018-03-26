@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   def about
   end
 
+  # rubocop:disable Metrics/MethodLength
   def calendar
     @events = [
       #       { title: '',
@@ -50,6 +51,7 @@ class PagesController < ApplicationController
         url: nil }
     ]
   end
+  # rubocop:enable Metrics/MethodLength
 
   def contact
   end
