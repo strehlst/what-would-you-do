@@ -1,0 +1,41 @@
+.jumbotron.frontpage {
+  height: 20rem;
+  padding: 0;
+  border-bottom: 2rem solid #fff;
+  background-position: top -4rem center;
+  background-attachment: fixed;
+}
+
+.jumbotron.frontpage .row{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(8,136,178, .5) 0%, rgba(178,49,122, .5) 100%);
+  margin: 0;
+}
+
+@include media-breakpoint-down(xs) {
+  .jumbotron.frontpage .row h1 {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .jumbotron.frontpage .row h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .jumbotron.frontpage {
+    background-position: top -4rem right;
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+  .jumbotron.frontpage .row h1 {
+    padding: 3rem 15rem 3rem 4rem;
+    font-size: 2rem;
+  }
+}
