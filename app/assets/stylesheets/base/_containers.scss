@@ -8,7 +8,6 @@ body {
   overflow-x: hidden !important;
 }
 
-
 .narrow-centered {
   width: 100%;
   max-width: 420px;
@@ -16,12 +15,16 @@ body {
 }
 
 section {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   background-color: #fff;
 }
 
 section#alerts {
-  padding: 1rem 0 3rem;
+  padding-top: 2rem;
+}
+
+.frontpage-view section#alerts {
+  padding: .9rem 0;
 }
 
 section#alerts .alert {
@@ -35,6 +38,9 @@ section#alerts .alert {
     display: -ms-flexbox;
     display:         flex;
   }
+  section#alerts {
+    padding: 1rem 0 3rem;
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -42,6 +48,9 @@ section#alerts .alert {
     padding-left: 3rem;
     padding-right: 3rem;
     margin: 0 auto;
+  }
+  section#alerts {
+    padding-bottom: 3rem;
   }
 }
 
