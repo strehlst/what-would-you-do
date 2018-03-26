@@ -8,6 +8,10 @@ RSpec.describe PagesController, type: :routing do
       expect(get: '/about').to route_to('pages#about')
     end
 
+    it 'routes to #articles' do
+      expect(get: '/articles').to route_to('pages#articles')
+    end
+
     it 'routes to #contact' do
       expect(get: '/contact').to route_to('pages#contact')
     end

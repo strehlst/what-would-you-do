@@ -23,8 +23,7 @@
       %a{class: 'navbar-brand d-none d-sm-block', href: root_path}
         = t('main.what_would_you_do_long_caption')
       %a{class: 'navbar-brand navbar-mobile-brand d-sm-none', href: root_path}
-        %strong= t('main.partials.what_would_you_do')
-        = t('main.partials.if_your_income_were_taken_care_of')
+        %strong= t('main.partials.what_would_you_do') + '?'
       %button{class: 'navbar-toggler', 'data-target': '.navbar-collapse', 'data-toggle': 'collapse', type: 'button'}
         ☰
       .collapse.navbar-collapse
