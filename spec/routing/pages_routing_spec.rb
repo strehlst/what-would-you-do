@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe PagesController, type: :routing do
+describe PagesController, type: :routing do
   describe 'routing' do
     it 'routes to #about' do
       expect(get: '/about').to route_to('pages#about')
@@ -10,6 +10,10 @@ RSpec.describe PagesController, type: :routing do
 
     it 'routes to #articles' do
       expect(get: '/articles').to route_to('pages#articles')
+    end
+
+    it 'routes to #calendar' do
+      expect(get: '/calendar').to route_to('pages#calendar')
     end
 
     it 'routes to #contact' do

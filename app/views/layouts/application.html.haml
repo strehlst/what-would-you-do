@@ -29,6 +29,8 @@
       .collapse.navbar-collapse
         %ul.navbar-nav.ml-auto
           %li.nav-item
+            = link_to(t('navigation.calendar'), pages_calendar_path, class: 'nav-link')
+          %li.nav-item
             = link_to(t('navigation.about'), pages_about_path, class: 'nav-link')
             - if user_signed_in?
               %li.nav-item
