@@ -10,6 +10,13 @@ describe PagesController, type: :controller do
       expect(response).to render_template('about')
     end
   end
+  context 'GET #calendar' do
+    it 'renders the calendar template' do
+      get :calendar
+      expect(response).to have_http_status(:success)
+      expect(response).to render_template('calendar')
+    end
+  end
   context 'GET #contact' do
     it 'renders the contact template' do
       get :contact

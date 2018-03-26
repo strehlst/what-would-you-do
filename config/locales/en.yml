@@ -48,8 +48,12 @@ en:
     unions: unions
     church: church
     work: work
+    events:
+      organized_by: organized by
+    more_information: more information
   navigation:
     about: About
+    calendar: Calendar
     contact: Contact
     articles: Recent press articles
     signed_out:
@@ -67,6 +71,8 @@ en:
       caption_too_short: Please enter at least 3 characters
       caption_too_long: Please enter less than 255 characters
   pages:
+    calendar:
+      description: We are regularly organizing public talks, workshops, movie nights and other gatherings. If you want to organize one with us in your city, just drop us a line.
     front_page:
       news_countdown: 'We will unveil more information in %{time}'
     articles:

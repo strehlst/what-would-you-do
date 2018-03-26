@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'dreams/:id/embrace', to: 'dreams#embrace', as: 'embrace_dream'
   delete 'dreams/:id/disembrace', to: 'dreams#disembrace', as: 'disembrace_dream'
   get 'about', to: 'pages#about', as: 'pages_about'
+  get 'calendar', to: 'pages#calendar', as: 'pages_calendar'
   get 'contact', to: 'pages#contact', as: 'pages_contact'
   get 'articles', to: 'pages#articles', as: 'pages_articles'
   get 'static/not-found', to: 'pages#not_found', as: 'pages_not_found'

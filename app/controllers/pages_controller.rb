@@ -6,6 +6,53 @@ class PagesController < ApplicationController
   def about
   end
 
+  # rubocop:disable Metrics/MethodLength
+  def calendar
+    @events = [
+      #       { title: '',
+      #         city: 'Braga',
+      #         location: '',
+      #         date: '' },
+      #       { title: '',
+      #         city: 'Coimbra',
+      #         location: '',
+      #         date: '' },
+      #       { title: '',
+      #         city: 'Lisboa',
+      #         location: '',
+      #         date: '' },
+      { title: 'xFuture Meetup on Universal Basic Income',
+        city: 'Porto',
+        location: 'Founders Founders: Founders Café',
+        date: '2018-04-19T18:45:00',
+        category: 'Automatização',
+        organizer: 'xFuture',
+        url: 'https://www.meetup.com/de-DE/xFuturemeetup/events/248678828/' },
+      { title: 'sense_drink: Basic Income Night',
+        city: 'Porto',
+        location: 'Porto i/o Riverside',
+        date: '2018-03-27T19:00:00',
+        category: 'Impacto social',
+        organizer: 'MakeSense Hotspot Porto',
+        url: 'https://www.facebook.com/events/204533683478164/' },
+      { title: 'Cine Conversa "Free Lunch Society"',
+        city: 'Porto',
+        location: 'Livraria Gato Vadio',
+        date: '2018-03-23T21:30:00',
+        category: 'Direitos Humanos',
+        organizer: 'LGBTripeir@s',
+        url: nil },
+      { title: 'Universal Basic Income Night',
+        city: 'Porto',
+        location: 'Porto i/o Downtown',
+        date: '2018-03-22T19:00:00',
+        category: 'Futuro do trabalho',
+        organizer: 'Porto i/o',
+        url: nil }
+    ]
+  end
+  # rubocop:enable Metrics/MethodLength
+
   def contact
   end
 
