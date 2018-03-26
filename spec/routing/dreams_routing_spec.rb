@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe DreamsController, type: :routing do
+describe DreamsController, type: :routing do
   describe 'routing' do
     it 'routes to #index' do
       expect(get: '/dreams').to route_to('dreams#index')
