@@ -315,6 +315,7 @@ fr-FR:
       register: 
       login: 
     articles: 
+    calendar: 
   dictionary:
     time_ago: 
     you_too: 
@@ -341,6 +342,9 @@ fr-FR:
     politics: 
     forms:
       public_name: 
+    events:
+      organized_by: 
+    more_information: 
   dreams:
     examples:
       travel_the_world: 
@@ -459,4 +463,6 @@ fr-FR:
     front_page:
       news_countdown: 
     articles:
+      description: 
+    calendar:
       description: 

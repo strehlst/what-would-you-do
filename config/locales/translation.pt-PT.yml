@@ -297,7 +297,7 @@ pt-PT:
       a_number_of_people_would_do_a_number_of_things: "%{users_count} pessoas fariam
         %{dreams_count} coisas"
       if_their_income_were_taken_care_of: se o rendimento delas fosse garantido
-      one_person_would_do_that_too: Uma pessoa faria isto também!
+      one_person_would_do_that_too: Uma outra pessoa faria isto também!
       n_people_would_do_that_too: "%{n} pessoas iriam fazer isto também!"
       what_else: Que mais?
     what_if_suddenly_you_received_a_thousand_euros_per_month: O que farias se, a partir
@@ -313,6 +313,7 @@ pt-PT:
       register: Registo
       login: Login
     articles: Artigos recentes
+    calendar: Calendário
   dictionary:
     time_ago: há %{time}
     you_too: Tu também <3
@@ -339,6 +340,9 @@ pt-PT:
     politics: política
     forms:
       public_name: Nome público
+    events:
+      organized_by: organizado por
+    more_information: saber mais
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
@@ -460,3 +464,6 @@ pt-PT:
       news_countdown: Aqui irás encontrar mais informações em %{time}
     articles:
       description: Estes são artigos recentes sobre o rendimento básico.
+    calendar:
+      description: Organizamos regularmente apresentações, workshops, projeções e
+        encontros públicos. Se quiseres organizar algo connosco na tua cidade, contacte-nos.
