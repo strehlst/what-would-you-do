@@ -1,6 +1,8 @@
 %section.container-fluid
   .row
-    .col-xs-12.col-md-6
-      %h1= t('navigation.about')
+    .col-sm-12.col-lg-3
+      %h1.pb-3= t('navigation.about')
+    .col-sm-12.col-lg-6
       %p= t('pages.about.description')
       %p= t('pages.contact.via_email', email: ENV['CONTACT_EMAIL_ADDRESS'])
+      
