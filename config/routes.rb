@@ -19,5 +19,7 @@ Rails.application.routes.draw do
   get 'articles', to: 'pages#articles', as: 'pages_articles'
   get 'static/not-found', to: 'pages#not_found', as: 'pages_not_found'
 
+  match '*path', to: 'pages#not_found', via: %i[get post]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
