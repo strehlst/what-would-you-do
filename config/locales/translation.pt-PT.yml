@@ -119,7 +119,7 @@ pt-PT:
     unavailable_session: 
     unacceptable_request: 
     connection_refused: 
-    page_not_found: 
+    page_not_found: Página não encontrada
   activerecord:
     errors:
       messages:
