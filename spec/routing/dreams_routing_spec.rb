@@ -17,7 +17,7 @@ describe DreamsController, type: :routing do
     end
 
     it 'routes to #edit' do
-      expect(get: '/dreams/1/edit').not_to be_routable
+      expect(get: '/dreams/1/edit').not_to route_to('dreams#edit', id: 1)
     end
 
     it 'route to #create' do
