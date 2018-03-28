@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe UsersController, type: :routing do
   describe 'routing' do
     it 'does not route to #index' do
-      expect(get: '/users').not_to be_routable
+      expect(get: '/users').not_to route_to('users#index')
     end
 
     it 'does not route to #new' do
