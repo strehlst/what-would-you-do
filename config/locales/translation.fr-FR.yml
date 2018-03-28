@@ -458,8 +458,13 @@ fr-FR:
   pages:
     about:
       description: 
+      how_can_i_help: 
+      support: 
+      join_facebook_group_html: 
+      come_to_check_ins_html: 
     contact:
       via_email: 
+      via_email_html: 
     front_page:
       news_countdown: 
     articles:
