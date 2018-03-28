@@ -5,6 +5,8 @@ class PagesController < ApplicationController
   include ImageHelper
   def about
   end
+
+  # rubocop:disable Metrics/MethodLength
   def calendar
     @events = [
       { title: 'xFuture Meetup on Universal Basic Income',
