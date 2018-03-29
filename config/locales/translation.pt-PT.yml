@@ -302,6 +302,8 @@ pt-PT:
       what_else: Que mais?
     what_if_suddenly_you_received_a_thousand_euros_per_month: O que farias se, a partir
       de amanhã, recebesses 1.000 EUR por mês durante um ano?
+    what_if_you_suddenly_received_a_basic_income: O que farias se, de repente, tivesses
+      um Rendimento Básico?
   navigation:
     signed_in:
       logout: 
@@ -343,6 +345,9 @@ pt-PT:
     events:
       organized_by: organizado por
     more_information: saber mais
+    confirmations:
+      do_you_really_want_to_disembrace_this_dream: 
+    social_welfare: prestações sociais
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
@@ -459,15 +464,12 @@ pt-PT:
         que uma garantia financeira mensal poderia trazer para a tua vida, para a
         nossa sociedade e para o futuro do trabalho. '
       how_can_i_help: Como posso ajudar?
-      support: 
+      support: Um Rendimento Básico Incondicional precisa de um trabalho comum de
+        todas as pessoas que querem que este projeto seja realizado em Portugal.
       join_facebook_group_html: Junta-te ao nosso <a href="%{url}" target="_blank">grupo</a>
         Facebook para receber notícias.
       come_to_check_ins_html: Vem aos nossos <a href="%{url}">encontros &ldquo;check-in&ldquo;</a>
         para conheceres-nos.
-    contact:
-      via_email: Envia uma mensagem para %{email} para saber mais.
-      via_email_html: Envia uma mensagem para <strong>%{email}</strong> para saber
-        mais.
     front_page:
       news_countdown: Aqui irás encontrar mais informações em %{time}
     articles:
@@ -475,3 +477,6 @@ pt-PT:
     calendar:
       description: Organizamos regularmente apresentações, workshops, projeções e
         encontros públicos. Se quiseres organizar algo connosco na tua cidade, contacte-nos.
+    contact:
+      via_email_html: Envia uma mensagem para <strong>%{email}</strong> para saber
+        mais.

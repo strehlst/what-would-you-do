@@ -304,6 +304,7 @@ fr-FR:
       n_people_would_do_that_too: 
       what_else: 
     what_if_suddenly_you_received_a_thousand_euros_per_month: 
+    what_if_you_suddenly_received_a_basic_income: 
   navigation:
     signed_in:
       logout: 
@@ -345,6 +346,9 @@ fr-FR:
     events:
       organized_by: 
     more_information: 
+    confirmations:
+      do_you_really_want_to_disembrace_this_dream: 
+    social_welfare: 
   dreams:
     examples:
       travel_the_world: 
@@ -462,12 +466,11 @@ fr-FR:
       support: 
       join_facebook_group_html: 
       come_to_check_ins_html: 
-    contact:
-      via_email: 
-      via_email_html: 
     front_page:
       news_countdown: 
     articles:
       description: 
     calendar:
       description: 
+    contact:
+      via_email_html: 
