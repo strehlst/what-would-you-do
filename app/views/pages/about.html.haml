@@ -4,5 +4,20 @@
       %h1.pb-3= t('navigation.about')
     .col-sm-12.col-lg-6
       %p= t('pages.about.description')
-      %p= t('pages.contact.via_email', email: ENV['CONTACT_EMAIL_ADDRESS'])
-      
+      %p= t('pages.about.support')
+      %h3.h5= t('pages.about.how_can_i_help')
+      %ul
+        %li= t('pages.about.come_to_check_ins_html', url: pages_calendar_path)
+        %li= t('pages.about.join_facebook_group_html', url: ENV['FACEBOOK_GROUP_URL'])
+        %li= t('pages.contact.via_email_html', email: ENV['CONTACT_EMAIL_ADDRESS'])
+  .row
+    .col-sm-12.offset-lg-9.col-lg-3
+      %p.text-muted.small
+        Meu Rendimento Básico
+        %br
+        c/o Porto i/o
+        %br
+        Rua Cândido dos Reis 81
+        %br
+        4050-152 Porto, Portugal
+        %br

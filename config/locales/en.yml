@@ -3,7 +3,8 @@ en:
   main:
     what_would_you_do_long_caption: What would you do if your income were taken care
       of?
-    what_if_suddenly_you_received_a_thousand_euros_per_month: What you do if, starting tomorrow, you received a basic income?
+    what_if_suddenly_you_received_a_thousand_euros_per_month: What would you do if, starting tomorrow, you received a basic income?
+    what_if_you_suddenly_received_a_basic_income: What would you do if you suddenly had a basic income?
     partials:
       what_would_you_do: What would you do
       if_your_income_were_taken_care_of: if your income were taken care of?
@@ -33,6 +34,8 @@ en:
       log_in: Log in
       read: Read
       read_whole_article: Read the whole article
+    confirmations:
+      do_you_really_want_to_disembrace_this_dream: Do you really want to let go of this dream?
     forms:
       public_name: Public name
     innovation: innovation
@@ -42,6 +45,7 @@ en:
     politics: politics
     welfare_state: welfare state
     social_security: social security
+    social_welfare: social welfare
     implementation: implementation
     automization: automization
     un_employment: "(un-)employment"
@@ -79,8 +83,12 @@ en:
       description: These are recent articles covering or mentioning basic income.
     about:
       description:  We are creating a place to discover the advantages a basic income could bring to your live, our society and the future of work.
+      how_can_i_help: How can I help?
+      support: Unconditional Basic Income is a community project that will spread, grow and mature the more people join and give it their personal touch.
+      join_facebook_group_html: 'Join our <a href="%{url}" target="_blank">Facebook group</a> to stay up to date.'
+      come_to_check_ins_html: 'Come to our <a href="%{url}">check-in meetings</a>, get to know us and see where help is appreciated and needed.'
     contact:
-      via_email: 'Send a message to %{email} if you have more questions.'
+      via_email_html: 'Send a message to <strong>%{email}</strong> if you have more questions.'
   development:
     alert:
       review_app: REVIEW APP | All data will eventually be deleted.

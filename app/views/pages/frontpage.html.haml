@@ -1,11 +1,15 @@
 .jumbotron.frontpage.container-fluid.rounded-0.mb-0{style: "background-image: url('#{asset_path('o-que-farias/porto_rendimento_basico_incondicional.jpg')}')"}
   .row
-    %h1.text-white= t('main.what_if_suddenly_you_received_a_thousand_euros_per_month')
-
+    %h1.text-white
+      = t('main.what_if_you_suddenly_received_a_basic_income')
+    %a#start.h5.text-white.text-center.font-weight-normal{href: '#start'}
+      %i.fa.fa-angle-double-down{'aria-hidden': true}
+      = '&nbsp;&nbsp;'.html_safe
+      = 'Vamos descobrir!'
 %section.container-fluid
   .row
     .col-lg-12
-      %h2= t('main.variations.that_is_what_other_people_would_do')
+      %h3= t('main.variations.that_is_what_other_people_would_do')
   .row
     = render 'dreams/dream_grid', dreams: @dreams, new_dream: Dream.new, title: t('main.variations.and_what_would_you_do')
 
