@@ -16,6 +16,10 @@ body {
   display: block;
 }
 
+.navbar-toggler {
+  border-radius: 0;
+}
+
 /* Base color theme */
 .navbar-mge .navbar-brand {
   color: #fff;

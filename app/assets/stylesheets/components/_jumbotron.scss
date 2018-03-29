@@ -13,29 +13,29 @@
   margin: 0;
 }
 
-@include media-breakpoint-down(xs) {
-  .jumbotron.frontpage .row h1 {
-    padding: 2rem;
-    font-size: 1.5rem;
-  }
+.jumbotron.frontpage h1 {
+  text-shadow: 1px 1px 2px #444;
 }
 
-@include media-breakpoint-down(sm) {
+.jumbotron.frontpage a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.jumbotron.frontpage .row h1 {
+  padding: 2rem;
+  font-size: 1.5rem !important;
+}
+
+@include media-breakpoint-up(sm) {
   .jumbotron.frontpage .row h1 {
-    font-size: 1.5rem;
+    padding: 3rem 15rem 0 4rem;
+    font-size: 2rem !important;
   }
 }
 
 @include media-breakpoint-down(md) {
   .jumbotron.frontpage {
     background-position: top -4rem right;
-  }
-}
-
-
-@include media-breakpoint-up(sm) {
-  .jumbotron.frontpage .row h1 {
-    padding: 3rem 15rem 3rem 4rem;
-    font-size: 2rem;
   }
 }

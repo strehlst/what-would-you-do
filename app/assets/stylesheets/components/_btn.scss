@@ -1,6 +1,17 @@
+.btn {
+  text-shadow: none !important;
+  border-radius: 0;
+}
+
 .btn-primary {
   background-color: #0888b2;
-  border-color: #0888b2;
+  border-color: #fff;
+}
+
+.btn-light {
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .btn-primary:hover {
@@ -10,7 +21,7 @@
 
 .btn-secondary {
   background-color: #b2317a;
-  border-color: #b2317a;
+  border-color: #fff;
 }
 
 .btn-secondary:hover {

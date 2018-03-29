@@ -1,4 +1,4 @@
 - unless dream.embraced?(current_user)
-  =link_to t('dictionary.you_too_question'), embrace_dream_path(dream), class: 'btn btn-primary btn-sm'
+  =link_to t('dictionary.you_too_question'), embrace_dream_path(dream), class: 'btn btn-secondary btn-sm'
 - else
-  =link_to t('dictionary.you_too'), disembrace_dream_path(dream), 'data-method': :delete, method: :delete, class: 'btn btn-secondary btn-sm', data: { confirm: 'You really want to let go of this dream?' }
+  =link_to t('dictionary.you_too'), disembrace_dream_path(dream), 'data-method': :delete, method: :delete, class: 'btn btn-light btn-sm', data: { confirm: t('dictionary.confirmations.do_you_really_want_to_disembrace_this_dream') }
