@@ -24,7 +24,7 @@ describe UsersController, type: :controller do
 
   describe 'GET #show' do
     it 'renders the show view' do
-      user = User.create! valid_attributes
+      user = User.create! valid_attributes_for_create
       get :show, params: { id: user.to_param }
       expect(response).to have_http_status(:success)
       expect(response).to render_template(:show)
@@ -33,7 +33,7 @@ describe UsersController, type: :controller do
 
   describe 'GET #dreams' do
     let(:user) do
-      User.create!(valid_attributes)
+      User.create!(valid_attributes_for_create)
     end
     let!(:dream) { Dream.create!(caption: I18n.t('dreams.examples.travel_the_world')) }
     let!(:embrace) { Embrace.create!(dream: dream, user: user) }
@@ -54,8 +54,8 @@ describe UsersController, type: :controller do
   end
 
   #   describe 'GET #edit' do
-  #     user = User.create! valid_attributes
-  #     other_user = User.create! valid_attributes
+  #     user = User.create! valid_attributes_for_create
+  #     other_user = User.create! valid_attributes_for_create
   #     context 'when the user is not logged in' do
   #       get :edit, params: { id: user.to_param }, session: valid_session
   #       expect(response).to be_success
@@ -78,46 +78,66 @@ describe UsersController, type: :controller do
   #     end
   #   end
   #
-  #   describe 'PUT #update' do
-  #     context 'with valid params' do
-  #       let(:new_attributes) do
-  #         skip('Add a hash of attributes valid for your model')
-  #       end
-  #
-  #       xit 'updates the requested user' do
-  #         user = User.create! valid_attributes
-  #         put :update, params: { id: user.to_param, user: new_attributes }, session: valid_session
-  #         user.reload
-  #         skip('Add assertions for updated state')
-  #       end
-  #
-  #       xit 'redirects to the user' do
-  #         user = User.create! valid_attributes
-  #         put :update, params: { id: user.to_param, user: valid_attributes }, session: valid_session
-  #         expect(response).to redirect_to(user)
-  #       end
-  #     end
-  #
-  #     context 'with invalid params' do
-  #       xit "returns a success response (i.e. to display the 'edit' template)" do
-  #         user = User.create! valid_attributes
-  #         put :update, params: { id: user.to_param, user: invalid_attributes }, session: valid_session
-  #         expect(response).to be_success
-  #       end
-  #     end
-  #   end
-  #   describe 'DELETE #destroy' do
-  #     xit 'destroys the requested user' do
-  #       user = User.create! valid_attributes
-  #       expect do
-  #         delete :destroy, params: { id: user.to_param }, session: valid_session
-  #       end.to change(User, :count).by(-1)
-  #     end
-  #
-  #     xit 'redirects to the users list' do
-  #       user = User.create! valid_attributes
-  #       delete :destroy, params: { id: user.to_param }, session: valid_session
-  #       expect(response).to redirect_to(users_url)
-  #     end
-  #   end
+  describe 'PUT #update' do
+    context 'with valid params' do
+      let(:valid_attributes_for_update) do
+        { public_name: 'User' }
+      end
+
+      it 'updates the requested user' do
+        user = User.create! valid_attributes_for_create
+        sign_in user
+        put :update, params: { id: user.to_param, user: valid_attributes_for_update }, session: valid_session
+        user.reload
+        expect(user.public_name).to eq 'User'
+      end
+
+      it 'redirects to the user' do
+        user = User.create! valid_attributes_for_create
+        sign_in user
+        put :update, params: { id: user.to_param, user: valid_attributes_for_update }, session: valid_session
+        expect(response).to redirect_to(edit_user_path(user))
+      end
+    end
+
+    context 'with invalid params' do
+      let(:invalid_attributes_for_update) do
+        { public_name: ' ' }
+      end
+
+      it 'does not update the requested user' do
+        user = User.create! valid_attributes_for_create
+        sign_in user
+        put :update, params: { id: user.to_param, user: invalid_attributes_for_update }, session: valid_session
+        expect(user.public_name).to eq 'User name'
+      end
+    end
+
+    context 'with forbidden params' do
+      let(:forbidden_attributes_for_update) do
+        { avatar_path: 'new_image' }
+      end
+
+      it 'does not update the requested user' do
+        user = User.create! valid_attributes_for_create
+        sign_in user
+        put :update, params: { id: user.to_param, user: forbidden_attributes_for_update }, session: valid_session
+        expect(user.avatar_path).to eq nil
+      end
+    end
+  end
+  describe 'DELETE #destroy' do
+    xit 'destroys the requested user' do
+      user = User.create! valid_attributes_for_create
+      expect do
+        delete :destroy, params: { id: user.to_param }, session: valid_session
+      end.to change(User, :count).by(-1)
+    end
+
+    xit 'redirects to the users list' do
+      user = User.create! valid_attributes_for_create
+      delete :destroy, params: { id: user.to_param }, session: valid_session
+      expect(response).to redirect_to(users_url)
+    end
+  end
 end
