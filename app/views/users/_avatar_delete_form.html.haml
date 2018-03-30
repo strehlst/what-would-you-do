@@ -7,4 +7,4 @@
             class: 'p-0',
             required: true
     .actions
-      = f.submit 'Delete avatar', class: 'form-control btn btn-danger', data: { disable_with: 'Deleting avatar', confirm: t('dictionary.are_you_sure') }
+      = f.submit t('dictionary.actions.delete_user_avatar'), class: 'form-control btn btn-danger', data: { disable_with: t('dictionary.actions.deleting'), confirm: t('dictionary.are_you_sure') }

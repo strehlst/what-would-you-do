@@ -120,6 +120,10 @@ pt-PT:
     unacceptable_request: 
     connection_refused: 
     page_not_found: Página não encontrada
+    string_too_short: 
+    string_too_long: 
+    upload_failed: 
+    invalid_file_type: 
   activerecord:
     errors:
       messages:
@@ -256,14 +260,14 @@ pt-PT:
     dictionary:
       email: Endereço de email
       password: Senha
-      are_you_sure: 
+      are_you_sure: És de certeza?
       password_confirmation: Confirmação da senha
-      current_password: 
+      current_password: Tua senha
       characters_minimum: 
       characters_maximum: 
-      save: 
+      save: Atualizar
       update: Atualizar
-      cancel: 
+      cancel: Cancelar
       back: 
       forgot_your_password: Esqueceste a tua senha?
       send_me_password_reset_instructions: 
@@ -271,10 +275,11 @@ pt-PT:
     controllers:
       registrations:
         edit:
-          title: 
+          title: Atualizar registo
           password:
             leave_blank_if_no_change_desired: 
-            we_need_your_current_password_to_confirm: 
+            we_need_your_current_password_to_confirm: Precisamos da tua senha para
+              confirmar as alterações
         cancel:
           are_you_unhappy: Infeliz?
           cancel_my_account: Cancelar meu registo
@@ -298,8 +303,10 @@ pt-PT:
         %{dreams_count} coisas"
       if_their_income_were_taken_care_of: se o rendimento delas fosse garantido
       one_person_would_do_that_too: Uma outra pessoa faria isto também!
-      n_people_would_do_that_too: "%{n} pessoas iriam fazer isto também!"
+      n_people_would_do_that_too: "%{n} pessoas fariam isto também!"
       what_else: Que mais?
+      one_person_would_do_that: Uma pessoa faria isto.
+      n_people_would_do_that: "%{n} pessoas fariam isto."
     what_if_suddenly_you_received_a_thousand_euros_per_month: O que farias se, a partir
       de amanhã, recebesses 1.000 EUR por mês durante um ano?
     what_if_you_suddenly_received_a_basic_income: O que farias se, de repente, tivesses
@@ -327,17 +334,22 @@ pt-PT:
       log_in: Login
       read: Ler
       read_whole_article: Ler artigo inteiro
-      edit_user_information: 
-      update_user_avatar: 
+      edit_user_information: Atualizar informações do usário
+      sharing: A partilhar
+      update: Atualizar
+      updating: A atualizar
+      upload_user_avatar: Carregar foto de perfil
+      uploading: A carregar
+      delete_user_avatar: Apagar foto de perfil
+      deleting: A apagar
     innovation: inovação
     economy: economia
     society: sociedade
-    implementation: 
+    implementation: implementação
     welfare_state: estado social
-    automization: 
     un_employment: "(des-)emprego"
-    unions: 
-    church: 
+    unions: sindicatos
+    church: igreja
     social_security: segurança social
     work: trabalho
     interview: entrevista
@@ -353,11 +365,11 @@ pt-PT:
     social_welfare: prestações sociais
     audio: 
     video: 
-    automation: 
-    debate: 
-    poverty: 
-    robot_tax: 
-    taxes: 
+    automation: automatização
+    debate: debate
+    poverty: pobreza
+    robot_tax: imposto robô
+    taxes: impostos
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
@@ -490,3 +502,6 @@ pt-PT:
     contact:
       via_email_html: Envia uma mensagem para <strong>%{email}</strong> para saber
         mais.
+  users:
+    update:
+      success: 

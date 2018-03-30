@@ -2,12 +2,16 @@
 
 class User < ApplicationRecord
   include UploadHelper
+  include ValidationsHelper
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :trackable, :validatable
 
   has_many :embraces
+
+  validates :public_name, presence: true
+  validate :valid_public_name_length
 
   attr_accessor :avatar_image_file, :delete_avatar_path
 
@@ -22,10 +26,16 @@ class User < ApplicationRecord
       if image_id
         self.avatar_path = image_id
       else
-        errors[:avatar_image_file] << 'upload'
+        errors[:avatar_image_file] << I18n.t('errors.upload_failed')
       end
     else
-      errors[:avatar_image_file] << 'invalid'
+      errors[:avatar_image_file] << I18n.t('errors.invalid_mime_type')
     end
+  end
+
+  private
+
+  def valid_public_name_length
+    valid_length('public_name', public_name, 2, 20)
   end
 end

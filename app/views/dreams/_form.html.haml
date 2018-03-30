@@ -16,7 +16,7 @@
           = form.text_field :caption, placeholder: t('dreams.examples.travel_the_world'), type: 'text', class: 'form-control'
       .form-group
         .actions
-          = form.submit class: 'btn btn-primary', value: t('dictionary.actions.share'), data: { disable_with: 'Sharing dream' }
+          = form.submit class: 'btn btn-primary', value: t('dictionary.actions.share'), data: { disable_with: t('dictionary.actions.sharing') }
 - else
   .dream.new-dream
     %h3= t('main.variations.and_you_what_would_you_do')

@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Dream < ApplicationRecord
+  include ValidationsHelper
+
   has_many :embraces
 
   validates :caption, presence: true
@@ -20,11 +22,6 @@ class Dream < ApplicationRecord
   private
 
   def valid_caption_length
-    trimmed_caption = caption.sub(/\s+\Z/, '')
-    if trimmed_caption.length < 3
-      errors[:caption] << I18n.t('dreams.errors.caption_too_short')
-    elsif trimmed_caption.length > 255
-      errors[:caption] << I18n.t('dreams.errors.caption_too_long')
-    end
+    valid_length('caption', caption, 3, 255)
   end
 end
