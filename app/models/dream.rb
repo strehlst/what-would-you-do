@@ -22,7 +22,6 @@ class Dream < ApplicationRecord
   private
 
   def valid_caption_length
-    caption = trim(caption)
     valid_length('caption', caption, 3, 255)
   end
 end

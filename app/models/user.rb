@@ -36,7 +36,6 @@ class User < ApplicationRecord
   private
 
   def valid_public_name_length
-    public_name = trim(public_name)
     valid_length('public_name', public_name, 2, 20)
   end
 end
