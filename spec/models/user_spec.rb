@@ -5,7 +5,7 @@ require 'rails_helper'
 describe User, type: :model do
   let(:user) do
     User.create!(public_name: 'User name',
-                 avatar_path: 'image.png',
+                 avatar_path: 'image',
                  email: 'user@example.com',
                  password: '12345?&@')
   end
@@ -19,7 +19,7 @@ describe User, type: :model do
   end
 
   it 'returns an avatar_path' do
-    expect(user.avatar_path).to eql 'image.png'
+    expect(user.avatar_path).to eql 'image'
   end
 
   it 'returns an avatar_url' do
@@ -76,6 +76,7 @@ describe User, type: :model do
                email: 'user@example.com',
                password: '12345?&')
     end
+
     it 'is not valid with a password bearing less than 8 characters' do
       expect(user).not_to be_valid
     end
