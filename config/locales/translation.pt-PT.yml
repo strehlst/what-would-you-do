@@ -327,6 +327,8 @@ pt-PT:
       log_in: Login
       read: Ler
       read_whole_article: Ler artigo inteiro
+      edit_user_information: 
+      update_user_avatar: 
     innovation: inovação
     economy: economia
     society: sociedade
@@ -346,8 +348,16 @@ pt-PT:
       organized_by: organizado por
     more_information: saber mais
     confirmations:
-      do_you_really_want_to_disembrace_this_dream: 
+      do_you_really_want_to_disembrace_this_dream: Tens a certeza que desejas apagar
+        este imagem?
     social_welfare: prestações sociais
+    audio: 
+    video: 
+    automation: 
+    debate: 
+    poverty: 
+    robot_tax: 
+    taxes: 
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
