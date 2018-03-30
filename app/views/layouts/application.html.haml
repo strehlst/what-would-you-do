@@ -9,6 +9,7 @@
     = stylesheet_link_tag     'normalize', media: 'all'
     = stylesheet_link_tag     'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag  'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag  'document_ready', 'data-turbolinks-track': 'reload'
 
     %title= t('main.what_would_you_do_long_caption')
     / HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries
@@ -26,7 +27,7 @@
       %a{class: 'navbar-brand navbar-mobile-brand d-sm-none', href: root_path}
         %strong= t('main.partials.what_would_you_do') + '?'
       %button{class: 'navbar-toggler', 'data-target': '.navbar-collapse', 'data-toggle': 'collapse', type: 'button'}
-        ☰
+        %i.fa.fa-bars{'aria-hidden': true}
       .collapse.navbar-collapse
         %ul.navbar-nav.ml-auto
           %li.nav-item
@@ -59,7 +60,7 @@
         %p.text-white.text-center.font-weight-light
           = '2018 &copy; O que farias? | oquefarias.pt'.html_safe
 
-  -if Rails.env.development? && false
+  -if Rails.env.development?
     = render 'shared/development_inspection'
   -if Rails.env.production?
     :javascript
@@ -70,5 +71,3 @@
 
       ga('create', '#{ENV['GOOGLE_ANALYTICS_API_KEY']}', 'auto');
       ga('send', 'pageview');
-
-    = javascript_include_tag  'document_ready', 'data-turbolinks-track': 'reload'

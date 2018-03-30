@@ -34,6 +34,8 @@ en:
       log_in: Log in
       read: Read
       read_whole_article: Read the whole article
+      edit_user_information: Edit user information
+      update_user_avatar: Update user avatar
     confirmations:
       do_you_really_want_to_disembrace_this_dream: Do you really want to let go of this dream?
     forms:
@@ -47,7 +49,13 @@ en:
     social_security: social security
     social_welfare: social welfare
     implementation: implementation
-    automization: automization
+    audio: audio
+    video: video
+    automation: automation
+    debate: debate
+    poverty: poverty
+    robot_tax: robot tax
+    taxes: taxes
     un_employment: "(un-)employment"
     unions: unions
     church: church

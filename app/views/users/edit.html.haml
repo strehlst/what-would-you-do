@@ -1,6 +1,21 @@
 %section.container-fluid
   .row
-    .col-lg-12
-      %h1 Editing user
-
-      = render 'form'
+    .col-xs-12.col-md-3
+      = image_tag quadratic_image_path(current_user.avatar_url, 400), class: 'img-fluid rounded-circle'
+      //%p
+      //  = link_to 'Your public profile looks like this, %Name%', user_path(current_user), target: '_blank'
+    .col-xs-12.offset-md-1.col-md-5
+      .row.form-wrapper.mb-5
+        .col-xs-12.col-lg-12
+          %h1= t('dictionary.actions.edit_user_information')
+          %h2= t('dictionary.actions.edit_user_information')
+          = render 'form'
+          %br
+          %br
+          %br
+          %h2= t('dictionary.actions.update_user_avatar')
+          = render 'avatar_upload_form'
+          -if @user.avatar_path
+            %br
+            %h2= t('dictionary.actions.delete_user_avatar')
+            = render 'avatar_delete_form'

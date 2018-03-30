@@ -328,6 +328,8 @@ fr-FR:
       log_in: 
       read: 
       read_whole_article: 
+      edit_user_information: 
+      update_user_avatar: 
     innovation: 
     economy: 
     society: 
@@ -349,6 +351,13 @@ fr-FR:
     confirmations:
       do_you_really_want_to_disembrace_this_dream: 
     social_welfare: 
+    audio: 
+    video: 
+    automation: 
+    debate: 
+    poverty: 
+    robot_tax: 
+    taxes: 
   dreams:
     examples:
       travel_the_world: 

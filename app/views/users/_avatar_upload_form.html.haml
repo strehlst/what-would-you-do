@@ -1,0 +1,9 @@
+= form_for @user, multipart: true do |f|
+  = f.label :avatar_image_file do
+    .form-group
+      .field
+        = f.file_field :avatar_image_file,
+            class: 'p-0',
+            required: true
+    .actions
+      = f.submit 'Upload avatar', class: 'form-control btn btn-primary', data: { disable_with: 'Uploading avatar' }
