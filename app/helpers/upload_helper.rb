@@ -2,11 +2,6 @@
 
 module UploadHelper
   def upload_user_avatar_file(user, image_file)
-    logger.warn('***')
-    logger.warn(user)
-    logger.warn(image_file)
-    logger.warn('***')
-
     image_id = public_image_id(user.id)
     image_id if Cloudinary::Uploader.upload(
       image_file,
