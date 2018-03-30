@@ -17,8 +17,8 @@ describe UploadHelper, type: :helper do
   end
   describe '#valid_image' do
     xit 'detects the presence of a valid jpg file' do
-      file = File.join(Rails.root, 'spec/fixtures/files/valid_jpg_file_square_1300px.jpg')
-      file = File.new(Rails.root.join('files/valid_jpg_file_square_1300px.jpg'))
+      _file = File.join(Rails.root, 'spec/fixtures/files/valid_jpg_file_square_1300px.jpg')
+      _file = File.new(Rails.root.join('files/valid_jpg_file_square_1300px.jpg'))
       expect(valid_image(file)).to eql true
     end
   end
