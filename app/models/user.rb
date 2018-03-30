@@ -26,15 +26,17 @@ class User < ApplicationRecord
       if image_id
         self.avatar_path = image_id
       else
-        self.errors[:avatar_image_file] << I18n.t('errors.upload_failed')
+        errors[:avatar_image_file] << I18n.t('errors.upload_failed')
       end
     else
-      self.errors[:avatar_image_file] << I18n.t('errors.invalid_mime_type')
+      errors[:avatar_image_file] << I18n.t('errors.invalid_mime_type')
     end
   end
 
   private
+
   def valid_public_name_length
-    valid_string_length('public_name', public_name, 2, 20)
+    public_name = trim(public_name)
+    valid_length('public_name', public_name, 2, 20)
   end
 end
