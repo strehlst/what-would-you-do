@@ -4,7 +4,6 @@ class UsersController < RestrictedAccessController
   include MetricsHelper
   include UploadHelper
   before_action :authenticate_user!, except: %i[show]
-  before_action :load_resource
   load_and_authorize_resource
 
   def show

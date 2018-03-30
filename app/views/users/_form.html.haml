@@ -1,13 +1,7 @@
 = form_for @user do |f|
-  - if @user.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
-      %ul
-        - @user.errors.full_messages.each do |message|
-          %li= message
   .form-group
     .field
       = f.text_field :public_name, autofocus: true, class: 'form-control'
       = f.label :public_name, t('dictionary.forms.public_name')
   .actions
-    = f.submit 'Save', class: 'form-control btn btn-primary'
+    = f.submit t('dictionary.actions.update'), data: { disable_with: t('dictionary.actions.updating') }, class: 'form-control btn btn-primary'

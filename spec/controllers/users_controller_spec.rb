@@ -3,15 +3,18 @@
 require 'rails_helper'
 
 describe UsersController, type: :controller do
-  let(:valid_attributes) do
+  let(:valid_attributes_for_create) do
     { email: 'test@example.com',
       password: '12345?&@',
-      'public_name': 'User name',
-      'avatar_path': nil }
+      'public_name': 'User name' }
   end
 
-  let(:invalid_attributes) do
-    { body: 'User name' }
+  let(:invalid_attributes_for_create) do
+    { public_name: '' }
+  end
+
+  let(:invalid_attributes_for_create) do
+    { avatar_path: '' }
   end
 
   # This should return the minimal set of values that should be in the session

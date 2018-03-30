@@ -122,6 +122,10 @@ fr-FR:
     unacceptable_request: 
     connection_refused: 
     page_not_found: 
+    string_too_short: 
+    string_too_long: 
+    upload_failed: 
+    invalid_file_type: 
   activerecord:
     errors:
       messages:
@@ -330,6 +334,13 @@ fr-FR:
       read_whole_article: 
       edit_user_information: 
       update_user_avatar: 
+      sharing: 
+      update: 
+      updating: 
+      upload_user_avatar: 
+      uploading: 
+      delete_user_avatar: 
+      deleting: 
     innovation: 
     economy: 
     society: 
@@ -483,3 +494,6 @@ fr-FR:
       description: 
     contact:
       via_email_html: 
+  users:
+    update:
+      success: 

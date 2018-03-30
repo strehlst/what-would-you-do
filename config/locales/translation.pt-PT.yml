@@ -120,6 +120,10 @@ pt-PT:
     unacceptable_request: 
     connection_refused: 
     page_not_found: Página não encontrada
+    string_too_short: 
+    string_too_long: 
+    upload_failed: 
+    invalid_file_type: 
   activerecord:
     errors:
       messages:
@@ -329,6 +333,13 @@ pt-PT:
       read_whole_article: Ler artigo inteiro
       edit_user_information: 
       update_user_avatar: 
+      sharing: 
+      update: 
+      updating: 
+      upload_user_avatar: 
+      uploading: 
+      delete_user_avatar: 
+      deleting: 
     innovation: inovação
     economy: economia
     society: sociedade
@@ -490,3 +501,6 @@ pt-PT:
     contact:
       via_email_html: Envia uma mensagem para <strong>%{email}</strong> para saber
         mais.
+  users:
+    update:
+      success: 

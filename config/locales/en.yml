@@ -29,13 +29,19 @@ en:
     you_too_question: You too?
     actions:
       share: Share
+      sharing: Sharing
       share_your_dreams: Share your dreams
       sign_up: Sign up
       log_in: Log in
       read: Read
       read_whole_article: Read the whole article
       edit_user_information: Edit user information
-      update_user_avatar: Update user avatar
+      update: Update
+      updating: Updating
+      upload_user_avatar: Upload user avatar
+      uploading: Uploading
+      delete_user_avatar: Delete user avatar
+      deleting: Deleting
     confirmations:
       do_you_really_want_to_disembrace_this_dream: Do you really want to let go of this dream?
     forms:
@@ -97,8 +103,15 @@ en:
       come_to_check_ins_html: 'Come to our <a href="%{url}">check-in meetings</a>, get to know us and see where help is appreciated and needed.'
     contact:
       via_email_html: 'Send a message to <strong>%{email}</strong> if you have more questions.'
+  users:
+    update:
+      success: User successfully updated.
   development:
     alert:
       review_app: REVIEW APP | All data will eventually be deleted.
   errors:
     page_not_found: Page not found
+    string_too_short: too short
+    string_too_long: too long
+    upload_failed: upload failed
+    invalid_file_type: invalid mime type
