@@ -206,7 +206,7 @@ pt-PT:
       last_attempt: Tens mais uma tentativa antes da tua conta ser bloqueada.
       not_found_in_database: O endereço de email ou a palavra-passe são inválidos.
       timeout: A sua sessão expirou, por favor autentique-se novamente para continuar.
-      unauthenticated: Antes de continuar tens de te autenticar ou efectuar um registo.
+      unauthenticated: Antes de continuar tens de autenticar-te ou efectuar um registo.
       unconfirmed: Tens de confirmar a tua conta antes de continuar.
     mailer:
       confirmation_instructions:
@@ -248,7 +248,7 @@ pt-PT:
       updated: A tua conta foi atualizada com sucesso.
     sessions:
       signed_in: Autenticação efectuada com sucesso. Bem-vindo!
-      signed_out: Saiu da sessão com sucesso.
+      signed_out: Saíste da sessão com sucesso. Até à próxima!
       already_signed_out: Sessão terminada com sucesso.
     unlocks:
       send_instructions: Dentro de alguns minutos irá receber um email com as instruções
