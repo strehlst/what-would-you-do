@@ -5,15 +5,9 @@
       %ul
         - @user.errors.full_messages.each do |message|
           %li= message
-
   .form-group
     .field
-      = f.label :public_name
-      = f.text_field :public_name, class: 'form-control'
-  .form-group
-    .field
-      = f.label :email
-      = f.text_field :email, class: 'form-control'
-  .form-group
-    .actions
-      = f.submit 'Save', class: 'form-control btn btn-primary'
+      = f.text_field :public_name, autofocus: true, class: 'form-control'
+      = f.label :public_name, t('dictionary.forms.public_name')
+  .actions
+    = f.submit 'Save', class: 'form-control btn btn-primary'

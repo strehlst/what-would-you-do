@@ -32,5 +32,5 @@
       %h1= t('devise.controllers.registrations.cancel.cancel_my_account')
       %p
         = t('devise.controllers.registrations.cancel.are_you_unhappy')
-        = button_to t('devise.dictionary.cancel'), registration_path(resource_name), data: { confirm: t('devise.dictionary.are_you_sure') }, method: :delete, class: 'btn btn-tertiary'
+        = button_to t('devise.dictionary.cancel'), registration_path(resource_name), data: { confirm: t('devise.dictionary.are_you_sure') }, method: :delete, class: 'btn btn-danger'
       = link_to t('devise.dictionary.back'), :back

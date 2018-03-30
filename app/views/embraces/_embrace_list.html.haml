@@ -5,8 +5,8 @@
         = render 'embraces/embrace_button', dream: embrace.dream
     %div
       %blockquote.blockquote
-        = link_to user_path(embrace.user), class: 'float-left' do
-          = image_tag quadratic_image_path(embrace.user.avatar_url, 60), class: 'img-fluid rounded-circle'
+        = link_to user_path(embrace.user), class: 'float-left', style: 'width: 60px; height: 60px;' do
+          = image_tag quadratic_image_path(embrace.user.avatar_url, 150), class: 'img-fluid rounded-circle'
         %div{style: 'padding: 0 120px 0 80px;'}
           %p.mb-0{class: "#{' small' if embrace.dream.caption.size > 50}"}= t('main.partials.i_would') + ' '+ embrace.dream.caption
           %footer.blockquote-footer

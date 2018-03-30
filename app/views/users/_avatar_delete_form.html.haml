@@ -1,0 +1,10 @@
+= form_for @user do |f|
+  = f.label :delete_avatar_path do
+    .form-group
+      .field
+        = f.hidden_field :delete_avatar_path,
+            value: 1,
+            class: 'p-0',
+            required: true
+    .actions
+      = f.submit 'Delete avatar', class: 'form-control btn btn-danger', data: { disable_with: 'Deleting avatar', confirm: t('dictionary.are_you_sure') }
