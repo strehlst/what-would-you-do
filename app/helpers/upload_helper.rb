@@ -2,7 +2,7 @@
 
 module UploadHelper
   def upload_user_avatar_file(user, image_file)
-    image_id = public_image_id(user.id)
+    image_id = create_public_image_id(user.id)
     image_id if Cloudinary::Uploader.upload(
       image_file,
       public_id: ENV['IMAGE_CDN_PATH'] + '/avatars/' + image_id
@@ -15,7 +15,7 @@ module UploadHelper
 
   private
 
-  def public_image_id(user_id)
+  def create_public_image_id(user_id)
     "#{user_id}_#{random_str}"
   end
 
