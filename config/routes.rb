@@ -5,9 +5,11 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: { registrations: 'registrations' }
   get 'user/dreams', to: 'users#dreams'
-  resources :users, only: %i[show] do
+  resources :users, only: %i[show edit update] do
+    patch 'avatar', to: 'users#update_avatar'
     resources :embraces
   end
+
   resources :dreams, only: %i[index show new create] do
     resources :embraces
   end
