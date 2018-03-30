@@ -17,7 +17,9 @@ en:
       what_else: What else?
       that_is_what_other_people_would_do: 'That''s what other people would do:'
       one_person_would_do_that_too: One person would do that too!
+      one_person_would_do_that: One person would do that.
       n_people_would_do_that_too: "%{n} people would do that too!"
+      n_people_would_do_that: "%{n} people would do that."
       a_number_of_people_would_do_a_number_of_things: "%{users_count} humans would
         do %{dreams_count} things"
       if_their_income_were_taken_care_of: if their income were taken care of
