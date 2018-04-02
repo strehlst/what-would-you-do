@@ -89,7 +89,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.23)
-    font-awesome-sass (5.0.6.2)
+    font-awesome-sass (5.0.9)
       sass (>= 3.2)
     gettext (3.2.9)
       locale (>= 2.0.5)
@@ -239,7 +239,7 @@ GEM
     ruby_dep (1.5.0)
     ruby_parser (3.11.0)
       sexp_processor (~> 4.9)
-    sass (3.5.5)
+    sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -314,7 +314,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   dotenv-rails
-  font-awesome-sass (~> 5.0.6)
+  font-awesome-sass (~> 5.0.9)
   gettext
   haml (~> 5.0.3)
   haml-rails (~> 1.0.0)
