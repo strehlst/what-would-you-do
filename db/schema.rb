@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180312131638) do
+ActiveRecord::Schema.define(version: 20180331090735) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,24 @@ ActiveRecord::Schema.define(version: 20180312131638) do
     t.index ["dream_id"], name: "index_embraces_on_dream_id"
     t.index ["user_id", "dream_id"], name: "index_embraces_on_user_id_and_dream_id", unique: true
     t.index ["user_id"], name: "index_embraces_on_user_id"
+  end
+
+  create_table "responses", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "survey_id"
+    t.text "comment"
+    t.integer "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["survey_id"], name: "index_responses_on_survey_id"
+    t.index ["user_id"], name: "index_responses_on_user_id"
+  end
+
+  create_table "surveys", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "description", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -53,4 +71,6 @@ ActiveRecord::Schema.define(version: 20180312131638) do
 
   add_foreign_key "embraces", "dreams"
   add_foreign_key "embraces", "users"
+  add_foreign_key "responses", "surveys"
+  add_foreign_key "responses", "users"
 end
