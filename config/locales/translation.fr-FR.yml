@@ -311,6 +311,9 @@ fr-FR:
       n_people_would_do_that: 
     what_if_suddenly_you_received_a_thousand_euros_per_month: 
     what_if_you_suddenly_received_a_basic_income: 
+    details:
+      site_name: 
+      non_www_url: 
   navigation:
     signed_in:
       logout: 
@@ -323,6 +326,7 @@ fr-FR:
       login: 
     articles: 
     calendar: 
+    survey: 
   dictionary:
     time_ago: 
     you_too: 
@@ -342,6 +346,7 @@ fr-FR:
       uploading: 
       delete_user_avatar: 
       deleting: 
+      update_user_avatar: 
     innovation: 
     economy: 
     society: 
@@ -369,6 +374,8 @@ fr-FR:
     poverty: 
     robot_tax: 
     taxes: 
+    zip_code: 
+    comment: 
   dreams:
     examples:
       travel_the_world: 

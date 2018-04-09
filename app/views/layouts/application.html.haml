@@ -60,7 +60,7 @@
     %footer.footer
       .container-fluid.bg-dark.p-3
         %p.text-white.text-center.font-weight-light
-          = '2018 &copy; O que farias? | oquefarias.pt'.html_safe
+          = "#{Time.now.year} &copy; #{I18n.t('main.details.site_name')} | #{t('main.details.non_www_url')}".html_safe
 
   -if Rails.env.development?
     = render 'shared/development_inspection'

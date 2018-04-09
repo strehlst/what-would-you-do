@@ -9,6 +9,7 @@ class User < ApplicationRecord
          :recoverable, :trackable, :validatable
 
   has_many :embraces
+  has_many :responses
 
   validates :public_name, presence: true
   validate :valid_public_name_length

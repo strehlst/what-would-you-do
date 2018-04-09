@@ -6,12 +6,18 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'registrations' }
   get 'user/dreams', to: 'users#dreams'
   resources :users, only: %i[show edit update] do
-    resources :embraces
+    resources :embraces, only: %i[show new]
+    resources :responses, only: %i[show new]
   end
 
   resources :dreams, only: %i[index show new create] do
-    resources :embraces
+    resources :embraces, only: %i[]
   end
+
+  resources :surveys, only: %i[index show] do
+    resources :responses, only: %i[index]
+  end
+
   get 'dreams/:id/embrace', to: 'dreams#embrace', as: 'embrace_dream'
   delete 'dreams/:id/disembrace', to: 'dreams#disembrace', as: 'disembrace_dream'
   get 'about', to: 'pages#about', as: 'pages_about'

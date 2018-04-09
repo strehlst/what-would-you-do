@@ -1,0 +1,44 @@
+%section.container-fluid
+  .row
+    .col-sm-12.col-lg-3
+      %h2.pb-3= t('navigation.survey')
+      %p.pb-4
+        = @survey.description
+    .col-sm-12.col-lg-9
+      %h1.pb-3= @survey.title
+
+      - if @survey.ongoing?
+        - if user_signed_in?
+          #- if user response exists
+          = 'Results of the survey'
+          #- if not
+          = 'Take part in the survey'
+        - else
+          = 'Pleas log in to take part and see results'
+      - else
+        = 'Results of the survey'
+
+      = form_for([@survey, @survey.responses.build]) do |f|
+        .form-group
+          .rating
+          #amount
+            %h3.result.selected.text-muted
+              Click to select
+              %span.value 0
+              %span.currency EUR
+            %h3.result.chosen
+              You selected
+              %span.value 0
+              %span.currency EUR
+        .form-group
+          .field
+            = f.label :comment, t('dictionary.comment')
+            = f.text_area :comment, placeholder: :comment, class: 'form-control'
+        .form-wrapper
+          .form-group
+            .field
+              = f.text_field :zip_code, placeholder: :zip_code, autofocus: true, class: 'form-control'
+              = f.label :zip_code, t('dictionary.zip_code')
+        .actions
+          = f.submit 'Submit', class: 'btn btn-primary form-control'
+

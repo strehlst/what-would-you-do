@@ -311,6 +311,9 @@ pt-PT:
       de amanhã, recebesses 1.000 EUR por mês durante um ano?
     what_if_you_suddenly_received_a_basic_income: O que farias se, de repente, tivesses
       um Rendimento Básico?
+    details:
+      site_name: O que farias?
+      non_www_url: oquefarias.pt
   navigation:
     signed_in:
       logout: 
@@ -323,6 +326,7 @@ pt-PT:
       login: Login
     articles: Artigos recentes
     calendar: Calendário
+    survey: Sondagem
   dictionary:
     time_ago: há %{time}
     you_too: Tu também <3
@@ -334,7 +338,7 @@ pt-PT:
       log_in: Login
       read: Ler
       read_whole_article: Ler artigo inteiro
-      edit_user_information: Atualizar informações do usário
+      edit_user_information: Atualizar informações
       sharing: A partilhar
       update: Atualizar
       updating: A atualizar
@@ -342,6 +346,7 @@ pt-PT:
       uploading: A carregar
       delete_user_avatar: Apagar foto de perfil
       deleting: A apagar
+      update_user_avatar: Atualizar foto de perfil
     innovation: inovação
     economy: economia
     society: sociedade
@@ -370,6 +375,8 @@ pt-PT:
     poverty: pobreza
     robot_tax: imposto robô
     taxes: impostos
+    zip_code: Código postal
+    comment: 
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
