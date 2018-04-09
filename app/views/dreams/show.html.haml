@@ -5,7 +5,7 @@
 
     .col-lg-12.text-center
       %br
-      = link_to "#{@users_count} people would do #{@dreams_count} things", dreams_path, class: 'btn btn-link'
+      = link_to t('main.variations.a_number_of_people_would_do_a_number_of_things', users_count: @users_count, dreams_count: @dreams_count), dreams_path, class: 'btn btn-link'
       %hr
 
 %section.container-fluid
