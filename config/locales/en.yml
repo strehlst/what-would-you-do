@@ -1,6 +1,9 @@
 ---
 en:
   main:
+    details:
+      site_name: Site name
+      non_www_url: example.org
     what_would_you_do_long_caption: What would you do if your income were taken care
       of?
     what_if_suddenly_you_received_a_thousand_euros_per_month: What would you do if, starting tomorrow, you received a basic income?
@@ -38,6 +41,7 @@ en:
       read: Read
       read_whole_article: Read the whole article
       edit_user_information: Edit user information
+      update_user_avatar: Update user avatar
       update: Update
       updating: Updating
       upload_user_avatar: Upload user avatar
@@ -71,11 +75,14 @@ en:
     events:
       organized_by: organized by
     more_information: more information
+    zip_code: Zip code
+    comment: Comment
   navigation:
     about: About
     calendar: Calendar
     contact: Contact
     articles: Recent press articles
+    survey: Survey
     signed_out:
       register: Register
       login: Login
