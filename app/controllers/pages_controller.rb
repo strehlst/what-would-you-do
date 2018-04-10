@@ -3,6 +3,9 @@
 class PagesController < ApplicationController
   include MetricsHelper
   include ImageHelper
+
+  before_action -> { http_caching_for 1.month }
+
   def about
   end
 
