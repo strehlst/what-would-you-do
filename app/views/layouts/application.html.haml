@@ -35,20 +35,20 @@
             = link_to(t('navigation.calendar'), pages_calendar_path, class: 'nav-link')
           %li.nav-item
             = link_to(t('navigation.about'), pages_about_path, class: 'nav-link')
-            - if user_signed_in?
-              %li.nav-item
-                = link_to(t('navigation.signed_in.i_would'), user_dreams_path, class: 'nav-link')
-              %li.nav-item
-                = link_to(t('navigation.signed_in.my_profile'), edit_user_path(current_user), class: 'nav-link')
-              %li.nav-item
-                = link_to(destroy_user_session_path, method: :delete, class: 'nav-link', title: t('navigation.signed_in.logout')) do
-                  %i.fa.fa-sign-out-alt.d-none.d-md-inline-block{'aria-hidden': true}
-                  %span.d-md-none= t('navigation.signed_in.logout')
-            - else
-              %li.nav-item
-              = link_to(t('navigation.signed_out.register'), new_user_registration_path, class: 'nav-link')
-              %li.nav-item
-              = link_to(t('navigation.signed_out.login'), new_user_session_path, class: 'nav-link')
+          - if user_signed_in?
+            %li.nav-item
+              = link_to(t('navigation.signed_in.i_would'), user_dreams_path, class: 'nav-link')
+            %li.nav-item
+              = link_to(t('navigation.signed_in.my_profile'), edit_user_path(current_user), class: 'nav-link')
+            %li.nav-item
+              = link_to(destroy_user_session_path, method: :delete, class: 'nav-link', title: t('navigation.signed_in.logout')) do
+                %i.fa.fa-sign-out-alt.d-none.d-md-inline-block{'aria-hidden': true}
+                %span.d-md-none= t('navigation.signed_in.logout')
+          - else
+            %li.nav-item
+            = link_to(t('navigation.signed_out.register'), new_user_registration_path, class: 'nav-link')
+            %li.nav-item
+            = link_to(t('navigation.signed_out.login'), new_user_session_path, class: 'nav-link')
     %section#alerts.container-fluid
       .row
         .col-lg-12
