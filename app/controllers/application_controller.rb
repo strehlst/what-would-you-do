@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
+  before_action :force_proper_host_name if Rails.env.production? && ENV['HOST_NAME']
   before_action :set_locale
 
   protect_from_forgery with: :exception
@@ -16,6 +17,10 @@ class ApplicationController < ActionController::Base
   end
 
   private
+
+  def force_proper_host_name
+    redirect_to 'http://' + ENV['HOST_NAME'] if request.host != ENV['HOST_NAME']
+  end
 
   def set_locale
     requested_locale = ENV['APPLICATION_LOCALE']
