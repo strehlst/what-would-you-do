@@ -16,6 +16,11 @@ class ApplicationController < ActionController::Base
     dreams_path
   end
 
+  def http_caching_for(duration)
+    request.session_options[:skip] = true
+    expires_in duration, public: true
+  end
+
   private
 
   def force_proper_host_name
