@@ -2,16 +2,6 @@
   .row
     .col-sm-12.col-lg-3
       %h1.pb-3= t('navigation.about')
-    .col-sm-12.col-lg-6
-      %p= t('pages.about.description')
-      %p= t('pages.about.support')
-      %h3.h5= t('pages.about.how_can_i_help')
-      %ul
-        %li= t('pages.about.come_to_check_ins_html', url: pages_calendar_path)
-        %li= t('pages.about.join_facebook_group_html', url: ENV['FACEBOOK_GROUP_URL'])
-        %li= t('pages.contact.via_email_html', email: ENV['CONTACT_EMAIL_ADDRESS'])
-  .row
-    .col-sm-12.offset-lg-9.col-lg-3
       %p.text-muted.small
         Meu Rendimento Básico
         %br
@@ -21,3 +11,13 @@
         %br
         4050-152 Porto, Portugal
         %br
+    .col-sm-12.col-lg-6
+      %p= t('pages.about.description')
+      %p= t('pages.about.support')
+      %h3.h5.mt-5= t('pages.about.how_can_i_help')
+      %ul
+        %li= t('pages.about.come_to_check_ins_html', url: pages_calendar_path)
+        %li= t('pages.about.join_facebook_group_html', url: ENV['FACEBOOK_GROUP_URL'])
+        %li= t('pages.contact.via_email_html', email: ENV['CONTACT_EMAIL_ADDRESS'])
+      %p.pt-5
+      = render 'dreams/form'

@@ -1,0 +1,11 @@
+- embraces.each do | embrace |
+  .col-sm-12.col-md-6
+    .embrace.d-block
+      %div
+        %blockquote.blockquote
+          = link_to user_path(embrace.user), class: 'float-left', style: 'width: 60px; height: 60px;' do
+            = image_tag quadratic_image_path(embrace.user.avatar_url, 150), class: 'img-fluid rounded-circle'
+          %div{style: 'padding: 0 0 0 80px;'}
+            %p.mb-0.font-weight-bold.text-muted= embrace.user.public_name
+            %footer.blockquote-footer
+              = t('dictionary.time_ago', time: distance_of_time_in_words(Time.now - embrace.created_at))

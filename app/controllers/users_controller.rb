@@ -7,6 +7,10 @@ class UsersController < RestrictedAccessController
   load_and_authorize_resource
 
   def show
+    load_metrics
+    @page_title = @user.public_name + ' ' + t('main.partials.would') + '...'
+    @dreams = Embrace.includes(:dream).all.where(user_id: @user.id)
+      .map { |embrace| Dream.find(embrace.dream_id) }
   end
 
   def edit

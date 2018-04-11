@@ -5,12 +5,15 @@ class PagesController < ApplicationController
   include ImageHelper
 
   before_action -> { http_caching_for 1.month }
+  before_action :load_metrics
 
   def about
+    @page_title = t('navigation.about')
   end
 
   # rubocop:disable Metrics/MethodLength
   def calendar
+    @page_title = t('navigation.calendar')
     @events = [
       { title: 'xFuture Meetup on Universal Basic Income',
         city: 'Porto',
@@ -52,10 +55,11 @@ class PagesController < ApplicationController
   # rubocop:enable Metrics/MethodLength
 
   def contact
+    @page_title = t('navigation.contact')
   end
 
   def frontpage
-    load_metrics
+    @page_title = '❤'
     @dreams = Dream.by_popularity_desc(5)
     @latest_embraces = Embrace.includes(:user, :dream).created_at_desc.limit(10)
   end
@@ -63,6 +67,7 @@ class PagesController < ApplicationController
   # rubocop:disable Metrics/MethodLength
   # rubocop:disable Metrics/AbcSize
   def articles
+    @page_title = t('navigation.articles')
     # rubocop:disable Metrics/LineLength
     @articles = [
       { title: 'No limiar duma (r)evolução?',
@@ -184,6 +189,7 @@ class PagesController < ApplicationController
   # rubocop:enable Metrics/AbcSize
 
   def not_found
+    @page_title = t('errors.page_not_found')
     render 'not_found', status: 404
   end
 end

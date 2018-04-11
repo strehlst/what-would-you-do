@@ -29,7 +29,7 @@ describe PagesController, type: :routing do
     end
 
     it 'routes to #not_found' do
-      expect(get: '/static/not-found').to route_to('pages#not_found')
+      expect(get: '/page-not-found').to route_to('pages#not_found')
     end
   end
 end
