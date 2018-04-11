@@ -59,7 +59,7 @@ class PagesController < ApplicationController
   end
 
   def frontpage
-    @page_title = '❤'
+    @page_title = '❤ | ' + t('main.partials.what_would_you_do') + '?'
     @dreams = Dream.by_popularity_desc(5)
     @latest_embraces = Embrace.includes(:user, :dream).created_at_desc.limit(10)
   end
