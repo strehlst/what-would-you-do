@@ -3,4 +3,5 @@
     .col-lg-12
       %h1= t('main.variations.i_would')
   .row
-    = render 'dreams/dream_grid', dreams: @dreams, new_dream: @new_dream, title: t('main.variations.what_else_would_you_do')
+    = render 'dreams/dream_grid', dreams: @dreams
+    = render 'dreams/dream_grid_form', new_dream: @new_dream, title: t('main.variations.what_else_would_you_do')

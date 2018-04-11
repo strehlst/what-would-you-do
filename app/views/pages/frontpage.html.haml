@@ -9,10 +9,17 @@
 %section.container-fluid
   .row
     .col-lg-12
+      %h2.text-center
+        = t('main.we_do_not_want_to_wait_long_caption')
+        %span.small.font-weight-normal
+          = link_to t('dictionary.more_information'), pages_about_path
+%section.container-fluid
+  .row
+    .col-lg-12
       %h3= t('main.variations.that_is_what_other_people_would_do')
   .row
-    = render 'dreams/dream_grid', dreams: @dreams, new_dream: Dream.new, title: t('main.variations.and_what_would_you_do')
-
+    = render 'dreams/dream_grid', dreams: @dreams
+    = render 'dreams/dream_grid_form', new_dream: Dream.new, title: t('main.variations.and_what_would_you_do')
 %section.container-fluid
   .row
     .col-lg-12

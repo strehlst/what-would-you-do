@@ -291,6 +291,8 @@ pt-PT:
       what_would_you_do: O que farias
       if_your_income_were_taken_care_of: se o teu rendimento fosse garantido?
       i_would: Eu iria
+      would: iria
+      would_plural: iriam
     variations:
       and_what_would_you_do: E o que farias tu?
       what_else_would_you_do: Que mais farias?
@@ -307,6 +309,8 @@ pt-PT:
       what_else: Que mais?
       one_person_would_do_that: Uma pessoa faria isto.
       n_people_would_do_that: "%{n} pessoas fariam isto."
+      n_people_would: "%{n} pessoas iriam"
+      one_person_would: Uma pessoa iria
     what_if_suddenly_you_received_a_thousand_euros_per_month: O que farias se, a partir
       de amanhã, recebesses 1.000 EUR por mês durante um ano?
     what_if_you_suddenly_received_a_basic_income: O que farias se, de repente, tivesses
@@ -314,6 +318,11 @@ pt-PT:
     details:
       site_name: O que farias?
       non_www_url: oquefarias.pt
+    ubi: RBI
+    unconditional_basic_income: Rendimento Básico Incondicional
+    my_basic_income: 
+    we_do_not_want_to_wait_long_caption: Não queremos esperar pela resolução dos debates
+      académicos, resolvemos nós próprios realizá-lo!
   navigation:
     signed_in:
       logout: 
@@ -377,6 +386,7 @@ pt-PT:
     taxes: impostos
     zip_code: Código postal
     comment: 
+    pilot_project: projeto-piloto
   dreams:
     examples:
       travel_the_world: viajar pelo mundo
@@ -489,9 +499,10 @@ pt-PT:
       none: 
   pages:
     about:
-      description: 'Aqui criamos um lugar para descobrires quais são as vantagens
-        que uma garantia financeira mensal poderia trazer para a tua vida, para a
-        nossa sociedade e para o futuro do trabalho. '
+      description: |-
+        Aqui criamos um lugar para descobrires quais são as vantagens que uma garantia financeira mensal poderia trazer para a tua vida, para a nossa sociedade e para o futuro do trabalho.
+
+        Estamos interessados em descobrir o que acontece se nós, enquanto sociedade, tivermos os recursos financeiros para nos focarmos nos nossos objetivos e não em necessidades financeiras imediatas. Queremos encorajar as pessoas a confiarem umas nas outras e a decidirem os seus próprios destinos. Queremos levar a discussão do rendimento básico para lá do mundo académico e para a nossa experiênciano dia a dia.
       how_can_i_help: Como posso ajudar?
       support: Um Rendimento Básico Incondicional precisa de um trabalho comum de
         todas as pessoas que querem que este projeto seja realizado em Portugal.
@@ -512,3 +523,11 @@ pt-PT:
   users:
     update:
       success: 
+  routes:
+    about: informacoes
+    articles: artigos
+    calendar: calendario
+    contact: contacto
+    page_not_found: pagina-nao-encontrada
+    users: pessoas
+    i_would: eu-iria

@@ -1,5 +1,13 @@
 %section.container-fluid
   .row
     .col-lg-12
-      %h1
-        = @user.public_name
+      %h1= @user.public_name + ' ' + t('main.partials.would') + '...'
+  .row
+    = render 'dreams/dream_grid', dreams: @dreams
+  .dream.new-dream.mt-5
+    %h3= t('main.variations.and_you_what_would_you_do')
+    %p= t('main.variations.join_our_users_long_call', users_count: @users_count)
+
+    .text-right
+      =link_to t('navigation.signed_out.register'), new_user_registration_path, class: 'btn btn-primary'
+      =link_to t('navigation.signed_out.login'), new_user_session_path, class: 'btn btn-secondary'

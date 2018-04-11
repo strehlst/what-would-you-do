@@ -295,6 +295,8 @@ fr-FR:
       what_would_you_do: 
       if_your_income_were_taken_care_of: 
       i_would: 
+      would: 
+      would_plural: 
     variations:
       and_what_would_you_do: 
       what_else_would_you_do: 
@@ -309,11 +311,17 @@ fr-FR:
       what_else: 
       one_person_would_do_that: 
       n_people_would_do_that: 
+      n_people_would: 
+      one_person_would: 
     what_if_suddenly_you_received_a_thousand_euros_per_month: 
     what_if_you_suddenly_received_a_basic_income: 
     details:
       site_name: 
       non_www_url: 
+    ubi: 
+    unconditional_basic_income: 
+    my_basic_income: 
+    we_do_not_want_to_wait_long_caption: 
   navigation:
     signed_in:
       logout: 
@@ -376,6 +384,7 @@ fr-FR:
     taxes: 
     zip_code: 
     comment: 
+    pilot_project: 
   dreams:
     examples:
       travel_the_world: 
@@ -504,3 +513,11 @@ fr-FR:
   users:
     update:
       success: 
+  routes:
+    about: 
+    articles: 
+    calendar: 
+    contact: 
+    page_not_found: 
+    users: 
+    i_would: 

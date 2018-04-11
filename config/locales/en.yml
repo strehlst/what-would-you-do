@@ -8,10 +8,16 @@ en:
       of?
     what_if_suddenly_you_received_a_thousand_euros_per_month: What would you do if, starting tomorrow, you received a basic income?
     what_if_you_suddenly_received_a_basic_income: What would you do if you suddenly had a basic income?
+    unconditional_basic_income: Unconditional Basic Income
+    my_basic_income: My Basic Income
+    ubi: UBI
+    we_do_not_want_to_wait_long_caption: We do not want to wait for academics to decide wether UBI works or not. We are convinced that we should just start it.
     partials:
       what_would_you_do: What would you do
       if_your_income_were_taken_care_of: if your income were taken care of?
       i_would: 'I would'
+      would: would
+      would_plural: would
     variations:
       and_what_would_you_do: And what would you do?
       what_else_would_you_do: What else would you do?
@@ -21,8 +27,10 @@ en:
       that_is_what_other_people_would_do: 'That''s what other people would do:'
       one_person_would_do_that_too: One person would do that too!
       one_person_would_do_that: One person would do that.
+      one_person_would: One person would
       n_people_would_do_that_too: "%{n} people would do that too!"
       n_people_would_do_that: "%{n} people would do that."
+      n_people_would: "%{n} people would"
       a_number_of_people_would_do_a_number_of_things: "%{users_count} humans would
         do %{dreams_count} things"
       if_their_income_were_taken_care_of: if their income were taken care of
@@ -72,6 +80,7 @@ en:
     unions: unions
     church: church
     work: work
+    pilot_project: pilot project
     events:
       organized_by: organized by
     more_information: more information
@@ -124,3 +133,11 @@ en:
     string_too_long: too long
     upload_failed: upload failed
     invalid_file_type: invalid mime type
+  routes:
+    about: about
+    articles: articles
+    calendar: calendar
+    contact: contact
+    i_would: i-would
+    page_not_found: page-not-found
+    users: humans

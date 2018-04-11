@@ -11,6 +11,10 @@ class DreamsController < ApplicationResourceController
   end
 
   def show
+    embraces_count = @dream.embraces.count
+    @page_title = I18n.t('main.variations.one_person_would') if embraces_count == 1
+    @page_title = I18n.t('main.variations.n_people_would', n: @dream.embraces.count) if embraces_count != 1
+    @page_title += ' ' + @dream.caption
     @new_dream = Dream.new
   end
 
