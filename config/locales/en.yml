@@ -133,11 +133,3 @@ en:
     string_too_long: too long
     upload_failed: upload failed
     invalid_file_type: invalid mime type
-  routes:
-    about: about
-    articles: articles
-    calendar: calendar
-    contact: contact
-    i_would: i-would
-    page_not_found: page-not-found
-    users: humans
