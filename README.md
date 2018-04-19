@@ -14,3 +14,10 @@ $ psql postgres
 > CREATE DATABASE whatwouldyoudo OWNER whatwouldyoudo;
 > CREATE DATABASE whatwouldyoudo_test OWNER whatwouldyoudo;
 ```
+
+### Sidekiq and Redis for ActiveJobs
+In order to use ActiveJobs, you need to have a [redis](https://redis.io/topics/quickstart) server and the sidekiq service running like so:
+```
+$ redis-server
+$ sidekiq --config sidekiq.yml default -q mailers -q system
+```
