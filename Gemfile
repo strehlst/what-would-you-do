@@ -44,7 +44,7 @@ gem 'redis', '~> 3.0'
 # Use Devise for authentication
 gem 'devise'
 # Use CanCanCan for authorization
-gem 'cancancan', '~> 2.1'
+gem 'cancancan', '~> 2.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
