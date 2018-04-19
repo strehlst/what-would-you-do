@@ -20,4 +20,4 @@
         %li= t('pages.about.join_facebook_group_html', url: ENV['FACEBOOK_GROUP_URL'])
         %li= t('pages.contact.via_email_html', email: ENV['CONTACT_EMAIL_ADDRESS'])
       %p.pt-5
-      = render 'dreams/form'
+      = render 'dreams/form', title: t('main.variations.and_you_what_would_you_do'), dream: Dream.new

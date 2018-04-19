@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   def calendar
     @page_title = t('navigation.calendar')
     @events = [
-      { title: 'sense_drink: Make Basic - Let\'s just do it!',
+      { title: 'sense_drink: Universal Basic Income - Let\'s just do it!',
         city: 'Lisboa',
         location: 'vai ser comunicado',
         date: '2018-04-27T19:00:00',
