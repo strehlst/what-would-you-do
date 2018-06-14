@@ -1,7 +1,7 @@
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
-  TargetRubyVersion: 2.4.3
+  TargetRubyVersion: 2.5.1
   Exclude:
     - db/schema.rb
 
