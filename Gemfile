@@ -15,7 +15,7 @@ gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Fontawesome for icons
-gem 'font-awesome-sass', '~> 5.0.13'
+gem 'font-awesome-sass', '~> 5.2.0'
 # Use Bootstrap
 gem 'bootstrap', '~> 4.1.1'
 # Use jQuery
