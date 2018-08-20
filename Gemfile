@@ -64,7 +64,7 @@ gem 'cloudinary'
 
 group :production do
   # Use New Relic for application monitoring
-  gem 'newrelic_rpm', '~> 4.8.0'
+  gem 'newrelic_rpm', '~> 5.3.0'
 end
 
 group :development, :test do
