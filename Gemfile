@@ -17,7 +17,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Fontawesome for icons
 gem 'font-awesome-sass', '~> 5.0.13'
 # Use Bootstrap
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.1.3'
 # Use jQuery
 gem 'jquery-rails'
 # Use Uglifier as compressor for JavaScript assets
