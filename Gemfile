@@ -73,7 +73,7 @@ group :development, :test do
   # Use Rubocop to enforce Ruby style community guidelines
   gem 'rubocop', '~> 0.57.2', require: false
   # Use RSpec for controllers, models and features
-  gem 'rspec-rails', '~> 3.7'
+  gem 'rspec-rails', '~> 3.8'
   # Use Dotenv to work with environment variables
   gem 'dotenv-rails'
 end
