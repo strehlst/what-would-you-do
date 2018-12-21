@@ -9,15 +9,15 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2.2'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Fontawesome for icons
-gem 'font-awesome-sass', '~> 5.0.13'
+gem 'font-awesome-sass', '~> 5.5.0'
 # Use Bootstrap
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.1.3'
 # Use jQuery
 gem 'jquery-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -37,7 +37,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -64,23 +64,23 @@ gem 'cloudinary'
 
 group :production do
   # Use New Relic for application monitoring
-  gem 'newrelic_rpm', '~> 4.8.0'
+  gem 'newrelic_rpm', '~> 5.6.0'
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Use Rubocop to enforce Ruby style community guidelines
-  gem 'rubocop', '~> 0.57.2', require: false
+  gem 'rubocop', '~> 0.61.1', require: false
   # Use RSpec for controllers, models and features
-  gem 'rspec-rails', '~> 3.7'
+  gem 'rspec-rails', '~> 3.8'
   # Use Dotenv to work with environment variables
   gem 'dotenv-rails'
 end
 
 group :test do
   # Use Code Climate test-reporter to track test coverage and code quality
-  gem 'codeclimate-test-reporter', '~> 1.0.0'
+  gem 'codeclimate-test-reporter', '~> 1.0.9'
   gem 'simplecov', require: false
   # Add more matchers to use in controller specs
   gem 'rails-controller-testing'
