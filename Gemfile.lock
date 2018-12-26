@@ -46,15 +46,15 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     arel (9.0.0)
     ast (2.4.0)
-    autoprefixer-rails (9.0.0)
+    autoprefixer-rails (9.4.3)
       execjs
     aws_cf_signer (0.1.3)
     bcrypt (3.1.12)
     bindex (0.5.0)
-    bootstrap (4.1.3)
-      autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.9, < 2)
-      sass (>= 3.5.2)
+    bootstrap (4.2.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     builder (3.2.3)
     byebug (10.0.2)
     cancancan (2.2.0)
@@ -170,7 +170,7 @@ GEM
     parser (2.5.3.0)
       ast (~> 2.4.0)
     pg (1.0.0)
-    popper_js (1.14.3)
+    popper_js (1.14.5)
     powerpack (0.1.2)
     public_suffix (3.0.2)
     puma (3.12.0)
@@ -264,6 +264,12 @@ GEM
     sassc (2.0.0)
       ffi (~> 1.9.6)
       rake
+    sassc-rails (2.1.0)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     sexp_processor (4.11.0)
     simplecov (0.13.0)
       docile (~> 1.1.0)
@@ -319,7 +325,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap (~> 4.1.3)
+  bootstrap (~> 4.2.1)
   byebug
   cancancan (~> 2.1)
   cloudinary
