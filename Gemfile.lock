@@ -58,7 +58,7 @@ GEM
     builder (3.2.3)
     byebug (10.0.2)
     cancancan (2.2.0)
-    cloudinary (1.11.0)
+    cloudinary (1.11.1)
       aws_cf_signer
       rest-client
     codeclimate-test-reporter (1.0.9)
