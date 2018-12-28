@@ -50,7 +50,7 @@ gem 'cancancan', '~> 2.3'
 # gem 'capistrano-rails', group: :development
 
 # Use PostgreSQL as the database for Active Record
-gem 'pg', '~> 1.0'
+gem 'pg', '~> 1.1'
 
 # Use translation.io service for i18n
 gem 'translation'
