@@ -161,7 +161,7 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     netrc (0.11.0)
-    newrelic_rpm (5.6.0.349)
+    newrelic_rpm (5.7.0.350)
     nio4r (2.3.1)
     nokogiri (1.10.0)
       mini_portile2 (~> 2.4.0)
@@ -342,7 +342,7 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   listen (>= 3.0.5, < 3.2)
-  newrelic_rpm (~> 5.6.0)
+  newrelic_rpm (~> 5.7.0)
   pg (~> 1.1)
   puma (~> 3.12)
   rails (~> 5.2.2)
