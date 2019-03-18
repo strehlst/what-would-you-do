@@ -96,7 +96,7 @@ group :development do
   # Use letter opener for e-mails
   gem 'letter_opener'
   # Use xray to debug HTML and CSS issues
-  gem 'xray-rails', '~> 0.3.1'
+  gem 'xray-rails', '~> 0.3.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
