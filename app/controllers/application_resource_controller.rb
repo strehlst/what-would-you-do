@@ -8,8 +8,8 @@ class ApplicationResourceController < ApplicationController
   def load_resource
     class_name = controller_name.classify
     instance_variable_set("@#{class_name.to_str.downcase}", class_name.constantize.find(params[:id]))
-  rescue ActiveRecord::RecordNotFound => error
-    logger.warn(error.to_s)
+  rescue ActiveRecord::RecordNotFound => e
+    logger.warn(e.to_s)
     redirect_to pages_not_found_path
   end
 end
