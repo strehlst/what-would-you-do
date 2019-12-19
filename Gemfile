@@ -71,7 +71,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Use Rubocop to enforce Ruby style community guidelines
-  gem 'rubocop', '~> 0.67.2', require: false
+  gem 'rubocop', '~> 0.78.0', require: false
   # Use RSpec for controllers, models and features
   gem 'rspec-rails', '~> 3.8'
   # Use Dotenv to work with environment variables
